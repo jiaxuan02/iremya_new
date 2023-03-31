@@ -2,29 +2,50 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class FallingBooks : MonoBehaviour
+public class EnemySpawner : MonoBehaviour
 {
-    Rigidbody2D rb;
-    BoxCollider2D boxCollider2d;
-    public float distance;
-    bool isFalling = false;
+    public float frequency = 10f; // every half second;
+    public GameObject Drip;
+    public GameObject player;
+    public Transform spawn;
 
-    // Start is called before the first frame update
-    private void Start()
+    private void OnEnable()
     {
-        rb = GetComponent<Rigidbody2D>();
-        boxCollider2d = GetComponent<BoxCollider2D>();
+        StartCoroutine(Spawn());
     }
 
-    private void Update()
+    private void OnDisable()
     {
-        Physics2D.queriesStartInColliders = false;
-        if (isFalling == false)
-        {
-            RaycastHit2D hit = Physics.Raycast(transform.position.Vector2.down, distance);
+        StopAllCoroutines();
+    }
 
-            Debug.DrawRay(transform.position, Vector2.down * distance, Color.red);
+    private IEnumerator Spawn()
+    {
+        WaitForSeconds delay = new WaitForSeconds(frequency);
+
+        while (true)
+        {
+            yield return delay;
+
+            // spawn your objects
+            Instantiate(Drip, spawn.position, Quaternion.identity);
+            yield return new WaitForSeconds(10);
+
+            //spawndeletion
         }
 
+       
     }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            Destroy(Drip);
+            Destroy(player);
+        }
+            
+    }
+
+
 }
