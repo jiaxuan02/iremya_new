@@ -7,6 +7,7 @@ TagManager:
   - DeadLine
   - Collection
   - Enemy
+  - Ground
   layers:
   - Default
   - TransparentFX
