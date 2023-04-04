@@ -4,47 +4,33 @@ using UnityEngine;
 
 public class EnemySpawner : MonoBehaviour
 {
-    public float frequency = 10f; // every half second;
+    public float delay= 5; // every half second;
     public GameObject Drip;
     public GameObject player;
     public Transform spawn;
+    public bool stop;
 
-    private void OnEnable()
+    private float startTime;
+
+    private void Start()
     {
-        StartCoroutine(Spawn());
+        StartCoroutine(SpawnTime());
     }
 
-    private void OnDisable()
+    /*private void Update()
     {
-        StopAllCoroutines();
-    }
-
-    private IEnumerator Spawn()
-    {
-        WaitForSeconds delay = new WaitForSeconds(frequency);
-
-        while (true)
-        {
-            yield return delay;
-
-            // spawn your objects
-            Instantiate(Drip, spawn.position, Quaternion.identity);
-            yield return new WaitForSeconds(10);
-
-            //spawndeletion
-        }
-
+        Spawn();
        
-    }
+        
+    }  */
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    IEnumerator SpawnTime()
     {
-        if (collision.gameObject.CompareTag("Player"))
+        while (!stop)
         {
-            Destroy(Drip);
-            Destroy(player);
+            Instantiate(Drip, spawn.position, Drip.transform.rotation);
+            yield return new WaitForSeconds(2.0f);
         }
-            
     }
 
 

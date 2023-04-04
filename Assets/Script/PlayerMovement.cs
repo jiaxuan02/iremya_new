@@ -76,4 +76,13 @@ public class PlayerMovement : MonoBehaviour
         yield return new WaitForSeconds(dashingCd);
         onDash = true;
     }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Enemy"))
+        {
+            Destroy(gameObject);
+        }
+
+    }
 }
