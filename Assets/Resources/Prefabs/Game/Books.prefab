@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: -2652319970463954810}
   - component: {fileID: 5835312420960074442}
   - component: {fileID: 5835312420960074443}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Books
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -99,6 +99,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f9fd28d0998e9014faaf2df9196f0e3e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_CrouchDisableCollider: {fileID: 5835312420960074443}
 --- !u!50 &5835312420960074442
 Rigidbody2D:
   serializedVersion: 4

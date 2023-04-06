@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class DestroyPrefabs : MonoBehaviour
 {
+    [SerializeField] private Collider2D m_CrouchDisableCollider;
 
     private void Start()
     {
@@ -17,4 +18,5 @@ public class DestroyPrefabs : MonoBehaviour
         }
 
     }
+
 }
