@@ -1,40 +1,22 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class DialogueManager : MonoBehaviour
 {
-    private Queue<string> sentences;
-    // Start is called before the first frame update
-    void Start()
-    {                   
-        sentences = new Queue<string>();
-    }
+    [Header("Dialogue UI")]
+    [SerializeField] private GameObject dialoguePanel;
+    
+    [SerializeField] private TextMeshProUGUI dialogueText;
 
-    public void StartDialogue (Dialogue dialogue){
-        Debug.Log("Starting the conversations.. " + dialogue.name);
+    private static DialogueManager instance;
 
-        sentences.Clear();
-
-        foreach (string sentence in sentences)
-        {
-            sentences.Enqueue(sentence);
+    private void Awake() {
+        
+        if(instance != null){
+            Debug.LogWarning("Found more than one Dialogue Manager in the scene");
         }
-
-        DisplayNextSentence();
-    }
-
-    public void DisplayNextSentence(){
-        if(sentences.Count == 0){
-            EndDialogue();
-            return;
-        }
-
-        string sentence = sentences.Dequeue();
-        Debug.Log(sentence);
-    }
-
-    void EndDialogue(){
-        Debug.Log("End of Conversation!");            
+        instance = this;
     }
 }
