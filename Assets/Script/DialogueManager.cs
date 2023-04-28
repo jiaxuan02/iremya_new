@@ -13,7 +13,7 @@ public class DialogueManager : MonoBehaviour
 
     private Story currentStory;
 
-    private bool dialogueIsPlaying;
+    public bool dialogueIsPlaying { get; private set; }
 
     private static DialogueManager instance;
 
@@ -37,27 +37,39 @@ public class DialogueManager : MonoBehaviour
     }
 
     private void Update() {
-       
+        if(!dialogueIsPlaying){
+            return;
+        }
+
+        if(Input.GetKeyDown(KeyCode.Space)){
+            ContinueStory();      
+        }
     }
 
     public void EnterDialogueMode(TextAsset inkJSON){
         currentStory = new Story(inkJSON.text);;
         dialogueIsPlaying = true;
-        dialoguePanel.SetActive(true);
+        dialoguePanel.SetActive(true); 
 
+        ContinueStory();
+    }
+
+    private IEnumerator ExitDialogueMode()
+    {
+        yield return new WaitForSeconds(0.2f);
+        dialogueIsPlaying = false;
+        dialoguePanel.SetActive(false);
+        dialogueText.text = "";
+    }
+
+    private void ContinueStory(){
+        
         if(currentStory.canContinue){
             dialogueText.text = currentStory.Continue();
         }
         else
         {
-            ExitDialogueMode();
+            StartCoroutine(ExitDialogueMode());
         }
-    }
-
-    private void ExitDialogueMode()
-    {
-         dialogueIsPlaying = false;
-         dialoguePanel.SetActive(false);
-         dialogueText.text = "";
     }
 }
