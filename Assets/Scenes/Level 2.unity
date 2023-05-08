@@ -4551,7 +4551,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   controller: {fileID: 765395954}
-  runSpeed: 60
+  runSpeed: 40
   tr: {fileID: 765395956}
   rb: {fileID: 765395949}
 --- !u!58 &765395953
