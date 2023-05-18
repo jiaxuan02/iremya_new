@@ -1035,6 +1035,7 @@ GameObject:
   - component: {fileID: 5932382032294305499}
   - component: {fileID: 5932382032294305476}
   - component: {fileID: 5932382032294305477}
+  - component: {fileID: 4633524062410229394}
   m_Layer: 5
   m_Name: BtnNext
   m_TagString: Untagged
@@ -1144,7 +1145,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 5932382032294305499}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 4633524062410229394}
+        m_TargetAssemblyTypeName: ChangeScene, Assembly-CSharp
+        m_MethodName: MoveToScene
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &5932382032294305477
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1163,6 +1176,18 @@ MonoBehaviour:
   _compressClip: {fileID: 0}
   _uncompressClip: {fileID: 0}
   _source: {fileID: 0}
+--- !u!114 &4633524062410229394
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5932382032294305479}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ec9b4ed5367b1142bef278bbcab6714, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6207152318969028155
 GameObject:
   m_ObjectHideFlags: 0

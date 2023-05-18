@@ -52,6 +52,9 @@ public class PlayerMovement : MonoBehaviour
 
     void FixedUpdate()
     {
+        if(DialogueManager.GetInstance().dialogueIsPlaying){
+            return;
+        }
         if (isDashing)
         {
             return;
