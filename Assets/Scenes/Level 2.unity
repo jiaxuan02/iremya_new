@@ -4317,6 +4317,7 @@ GameObject:
   - component: {fileID: 765395952}
   - component: {fileID: 765395954}
   - component: {fileID: 765395956}
+  - component: {fileID: 765395957}
   m_Layer: 3
   m_Name: Player
   m_TagString: Player
@@ -4453,6 +4454,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   controller: {fileID: 765395954}
+  animator: {fileID: 765395957}
   runSpeed: 40
   tr: {fileID: 765395956}
   rb: {fileID: 765395949}
@@ -4496,7 +4498,19 @@ MonoBehaviour:
   m_CrouchDisableCollider: {fileID: 765395951}
   OnLandEvent:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 765395952}
+        m_TargetAssemblyTypeName: PlayerMovement, Assembly-CSharp
+        m_MethodName: OnLanding
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   OnCrouchEvent:
     m_PersistentCalls:
       m_Calls: []
@@ -4621,6 +4635,26 @@ TrailRenderer:
   m_MinVertexDistance: 0.1
   m_Autodestruct: 0
   m_Emitting: 0
+--- !u!95 &765395957
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 765395945}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: c9663a9f60b2c1840a6893c57997f1e4, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
 --- !u!4 &776166560 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8369456260902682767, guid: 2062f2762f5a5c64cb97371830e41ee5, type: 3}
