@@ -10,8 +10,6 @@ TagManager:
   - Ground
   - Boost
   - NPC
-  - Ladder
-  - Furniture
   layers:
   - Default
   - TransparentFX
@@ -49,24 +47,18 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: ground
-    uniqueID: 713920513
-    locked: 0
-  - name: Furniture
-    uniqueID: 2857777505
-    locked: 0
   - name: bg
     uniqueID: 3204790255
-    locked: 0
-  - name: player
-    uniqueID: 1406076639
     locked: 0
   - name: environment
     uniqueID: 1403325937
     locked: 0
+  - name: player
+    uniqueID: 1406076639
+    locked: 0
   - name: front
     uniqueID: 1388718261
     locked: 0
-  - name: NPC
-    uniqueID: 399711833
+  - name: ground
+    uniqueID: 713920513
     locked: 0
