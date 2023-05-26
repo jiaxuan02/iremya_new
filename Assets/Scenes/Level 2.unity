@@ -4574,7 +4574,6 @@ GameObject:
   - component: {fileID: 765395952}
   - component: {fileID: 765395954}
   - component: {fileID: 765395956}
-  - component: {fileID: 765395957}
   m_Layer: 3
   m_Name: Player
   m_TagString: Player
@@ -4713,7 +4712,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   controller: {fileID: 765395954}
-  animator: {fileID: 765395957}
   runSpeed: 40
   tr: {fileID: 765395956}
   rb: {fileID: 765395949}
@@ -4757,19 +4755,7 @@ MonoBehaviour:
   m_CrouchDisableCollider: {fileID: 765395951}
   OnLandEvent:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 765395952}
-        m_TargetAssemblyTypeName: PlayerMovement, Assembly-CSharp
-        m_MethodName: OnLanding
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   OnCrouchEvent:
     m_PersistentCalls:
       m_Calls: []
