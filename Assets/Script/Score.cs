@@ -2,17 +2,18 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class Score : MonoBehaviour
 {
-    public Text myscore;
-    private int scores;
+    public TextMeshProUGUI myscore;
+    public static int scores;
 
     // Start is called before the first frame update
     void Start()
     {
         scores = 0;
-        myscore.text = "Score : " + scores;
+        myscore.text = "Book not found";
     }
 
     // Update is called once per frame
@@ -22,7 +23,7 @@ public class Score : MonoBehaviour
         {
             scores++;
             Destroy(Coin.gameObject);//destroy when the player touches the coin
-            myscore.text = "Score: " + scores;
+            myscore.text = "Book Found!!";
         }
     }
 

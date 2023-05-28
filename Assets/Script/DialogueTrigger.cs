@@ -4,11 +4,14 @@ using UnityEngine;
 
 public class DialogueTrigger : MonoBehaviour
 {
+    //[SerializeField] Score sc;
+
     [Header("Visual Cue")]
     [SerializeField] private GameObject visualcue;
 
     [Header("JSON file")]
     [SerializeField] private TextAsset inkJSON;
+    [SerializeField] private TextAsset inkJSON2;
     private bool playerInRange;
 
     private void Update() {
@@ -16,7 +19,13 @@ public class DialogueTrigger : MonoBehaviour
         if (playerInRange && !DialogueManager.GetInstance().dialogueIsPlaying){
             visualcue.SetActive(true);
             if(Input.GetKeyDown(KeyCode.F)){
-                DialogueManager.GetInstance().EnterDialogueMode(inkJSON) ;
+                if(Score.scores != 1){
+                    DialogueManager.GetInstance().EnterDialogueMode(inkJSON) ;
+                }
+                else{
+                    DialogueManager.GetInstance().EnterDialogueMode(inkJSON2) ;
+                }
+                
             }
         }
         else{
