@@ -2,16 +2,17 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DialogueTrigger : MonoBehaviour
+public class WinTrigger : MonoBehaviour
 {
     //[SerializeField] Score sc;
 
     [Header("Visual Cue")]
     [SerializeField] private GameObject visualcue;
 
+    [SerializeField] private GameObject panel;
+
     [Header("JSON file")]
     [SerializeField] private TextAsset inkJSON;
-    [SerializeField] private TextAsset inkJSON2;
 
     public static bool policeCalled = false;
     private bool playerInRange;
@@ -21,14 +22,12 @@ public class DialogueTrigger : MonoBehaviour
         if (playerInRange && !DialogueManager.GetInstance().dialogueIsPlaying){
             visualcue.SetActive(true);
             if(Input.GetKeyDown(KeyCode.F)){
-                if(Score.scores != 1){
+                if(DialogueTrigger.policeCalled == false){
                     DialogueManager.GetInstance().EnterDialogueMode(inkJSON);
-                    policeCalled = false;
 
                 }
                 else{
-                    DialogueManager.GetInstance().EnterDialogueMode(inkJSON2) ;
-                    policeCalled = true;
+                    panel.SetActive(true);
                 }
                 
             }
@@ -41,7 +40,8 @@ public class DialogueTrigger : MonoBehaviour
     private void Awake() {
         
         playerInRange = false;
-        visualcue.SetActive(false);        
+        visualcue.SetActive(false);
+        panel.SetActive(false);        
     }
 
     private void OnTriggerEnter2D(Collider2D collider) {

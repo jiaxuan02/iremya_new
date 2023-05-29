@@ -53,7 +53,7 @@ public class DialogueManager : MonoBehaviour
             return;
         }
 
-        if(Input.GetKeyDown(KeyCode.Space)){
+        if(Input.GetKeyDown(KeyCode.E)){
             ContinueStory();      
         }
     }
