@@ -58,6 +58,10 @@ public class CharacterController2D : MonoBehaviour
 					OnLandEvent.Invoke();
 			}
 		}
+
+		if(DialogueManager.GetInstance().dialogueIsPlaying){
+			return;
+		}
 	}
 
 
