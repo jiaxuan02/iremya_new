@@ -12,6 +12,7 @@ public class Key : MonoBehaviour
         door.GetComponent<BoxCollider2D>().enabled = false;
         lockd = false;
         Destroy(gameObject);
+        Destroy(door);
     }
    }
 }

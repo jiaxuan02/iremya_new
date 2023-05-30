@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class DialogueTrigger : MonoBehaviour
 {
-    //[SerializeField] Score sc;
 
     [Header("Visual Cue")]
     [SerializeField] private GameObject visualcue;
@@ -20,18 +19,21 @@ public class DialogueTrigger : MonoBehaviour
 
         if (playerInRange && !DialogueManager.GetInstance().dialogueIsPlaying){
             visualcue.SetActive(true);
-            if(Input.GetKeyDown(KeyCode.F)){
-                if(Score.scores != 1){
+            if(Input.GetKeyDown(KeyCode.F))
+            {
+                if(Score.scores == 1)
+                {
                     DialogueManager.GetInstance().EnterDialogueMode(inkJSON);
-                    policeCalled = false;
+                    policeCalled = true;
 
                 }
                 else{
                     DialogueManager.GetInstance().EnterDialogueMode(inkJSON2) ;
-                    policeCalled = true;
-                }
+                    policeCalled = false;
                 
+                }
             }
+            
         }
         else{
             visualcue.SetActive(false);

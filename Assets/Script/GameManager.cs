@@ -3,35 +3,15 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
-{
-    private int coins, winsConditions = 1;
+{   
+    [SerializeField] private GameObject blur;
 
-    private void Awake() {
-        if(instance == null){
-            instance = this;
-        }
-        else{
-            DestroyImmediate(this);
-        } 
+    [SerializeField] private TextAsset ink;
+    public void Awake() {
+        blur.SetActive(true);
+        Time.timeScale = 0;
+        DialogueManager.GetInstance().EnterDialogueMode(ink);
+        Time.timeScale = 1;
     }
 
-    private static GameManager instance;
-
-    public static GameManager MyInstance{
-        get{
-            if(instance == null)
-                instance = new GameManager();
-
-            return instance;
-        }
-    }
-
-    private void Start() {
-        UIManager.MyInstance.UpdateCoinUI(coins, winsConditions);
-    }
-
-    public void AddCoins(int _coins){
-        coins += _coins;
-        UIManager.MyInstance.UpdateCoinUI(coins, winsConditions);
-    }
 }
