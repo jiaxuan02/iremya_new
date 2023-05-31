@@ -17,4 +17,16 @@ public class ChangeScene : MonoBehaviour
     public void quit(){
         SceneManager.LoadScene(1);
     }
+
+    public void pauseGame(){
+        Time.timeScale = 0;
+    }
+
+    public void startGame(){
+        Time.timeScale = 1;
+    }
+
+    public void QuitGame(){
+        Application.Quit();
+    }
 }

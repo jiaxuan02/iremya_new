@@ -637,6 +637,38 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8765148057934879450, guid: 8027bcfab530bf5498a4e084edde2403, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8765148057934879450, guid: 8027bcfab530bf5498a4e084edde2403, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8765148057934879450, guid: 8027bcfab530bf5498a4e084edde2403, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 6571468045511503088}
+    - target: {fileID: 8765148057934879450, guid: 8027bcfab530bf5498a4e084edde2403, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8765148057934879450, guid: 8027bcfab530bf5498a4e084edde2403, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: MoveToScene
+      objectReference: {fileID: 0}
+    - target: {fileID: 8765148057934879450, guid: 8027bcfab530bf5498a4e084edde2403, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: ChangeScene, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 8765148057934879450, guid: 8027bcfab530bf5498a4e084edde2403, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8765148057934879450, guid: 8027bcfab530bf5498a4e084edde2403, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8027bcfab530bf5498a4e084edde2403, type: 3}
 --- !u!224 &2336782521652887545 stripped
@@ -644,6 +676,23 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 6965080746491248459, guid: 8027bcfab530bf5498a4e084edde2403, type: 3}
   m_PrefabInstance: {fileID: 4667166670101659826}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &5385743748900387727 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 755226208765950781, guid: 8027bcfab530bf5498a4e084edde2403, type: 3}
+  m_PrefabInstance: {fileID: 4667166670101659826}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &6571468045511503088
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5385743748900387727}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ec9b4ed5367b1142bef278bbcab6714, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &4667166670562843173
 PrefabInstance:
   m_ObjectHideFlags: 0
