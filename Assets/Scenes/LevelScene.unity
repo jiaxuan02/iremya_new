@@ -5346,6 +5346,7 @@ GameObject:
   - component: {fileID: 917663300}
   - component: {fileID: 917663299}
   - component: {fileID: 917663301}
+  - component: {fileID: 917663302}
   m_Layer: 5
   m_Name: School
   m_TagString: Untagged
@@ -5455,7 +5456,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1705830723}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 917663302}
+        m_TargetAssemblyTypeName: ChangeScene, Assembly-CSharp
+        m_MethodName: MoveToScene
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 4
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &917663302
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 917663297}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ec9b4ed5367b1142bef278bbcab6714, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &920850259
 GameObject:
   m_ObjectHideFlags: 0
@@ -8111,6 +8136,7 @@ GameObject:
   - component: {fileID: 1376452283}
   - component: {fileID: 1376452282}
   - component: {fileID: 1376452284}
+  - component: {fileID: 1376452285}
   m_Layer: 5
   m_Name: BusStop
   m_TagString: Untagged
@@ -8220,7 +8246,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1705830723}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1376452285}
+        m_TargetAssemblyTypeName: ChangeScene, Assembly-CSharp
+        m_MethodName: MoveToScene
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 5
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1376452285
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1376452280}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ec9b4ed5367b1142bef278bbcab6714, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1377468176
 GameObject:
   m_ObjectHideFlags: 0
@@ -9538,6 +9588,7 @@ GameObject:
   - component: {fileID: 1647713172}
   - component: {fileID: 1647713171}
   - component: {fileID: 1647713173}
+  - component: {fileID: 1647713174}
   m_Layer: 5
   m_Name: ShoppingMall
   m_TagString: Untagged
@@ -9647,7 +9698,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1705830723}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1647713174}
+        m_TargetAssemblyTypeName: ChangeScene, Assembly-CSharp
+        m_MethodName: MoveToScene
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 6
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1647713174
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1647713169}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ec9b4ed5367b1142bef278bbcab6714, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1655287214
 GameObject:
   m_ObjectHideFlags: 0
@@ -10114,9 +10189,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1705830718}
   - component: {fileID: 1705830721}
-  - component: {fileID: 1705830719}
   - component: {fileID: 1705830723}
+  - component: {fileID: 1705830719}
   - component: {fileID: 1705830722}
+  - component: {fileID: 1705830724}
   m_Layer: 5
   m_Name: Home
   m_TagString: Untagged
@@ -10188,7 +10264,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1705830723}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1705830724}
+        m_TargetAssemblyTypeName: ChangeScene, Assembly-CSharp
+        m_MethodName: MoveToScene
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 3
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!222 &1705830721
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -10247,6 +10335,18 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &1705830724
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1705830717}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ec9b4ed5367b1142bef278bbcab6714, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1709440948
 GameObject:
   m_ObjectHideFlags: 0
