@@ -2,21 +2,43 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class winDOor : MonoBehaviour
+public class winDoor : MonoBehaviour
 {
-    [SerializeField] public GameObject door;
-    [SerializeField] public GameObject panel;
+    [SerializeField] public GameObject cue;
+    [SerializeField] private GameObject panel;
+
+    private bool InRange;
+    public static bool win = false;
 
     private void Awake() {
-        panel.SetActive(false);
+        cue.SetActive(false);
     }
-    void Update() {
-        if(Lvl2Trigger.win == true)
-        door.SetActive(true);
-
-        if(Input.GetKeyDown(KeyCode.F)){
-            panel.SetActive(true);
+    private void Update() {
+        if (InRange){
+            cue.SetActive(true);
+            if(Input.GetKeyDown(KeyCode.F)){
+                    Time.timeScale = 0;
+                    panel.SetActive(true);
+                    win = true;
+            }
+        }
+        else{
+            cue.SetActive(false);
         }
     }
 
+     private void OnTriggerEnter2D(Collider2D collider) {
+
+        if(collider.gameObject.tag == "Player"){
+            InRange = true;
+        }
+        
+    }
+
+    private void OnTriggerExit2D(Collider2D collider) {
+        
+        if(collider.gameObject.tag == "Player"){
+            InRange = false;
+        }
+    }
 }

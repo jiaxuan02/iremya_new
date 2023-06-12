@@ -6,7 +6,8 @@ public class Lvl2Trigger : MonoBehaviour
 {
     [Header("Visual Cue")]
     [SerializeField] private GameObject cue;
-    [SerializeField] private GameObject panel;
+
+    [SerializeField] private GameObject door;
 
     [Header("JSON file")]
     [SerializeField] private TextAsset inkJSON;
@@ -22,8 +23,8 @@ public class Lvl2Trigger : MonoBehaviour
             cue.SetActive(true);
             if(Input.GetKeyDown(KeyCode.F)){
                     DialogueManager.GetInstance().EnterDialogueMode(inkJSON);
+                    door.SetActive(true);
                     win = true;
-                    panel.SetActive(true);
             }
         }
         else{
@@ -32,7 +33,7 @@ public class Lvl2Trigger : MonoBehaviour
     }
 
     private void Awake() {
-        panel.SetActive(false);
+        door.SetActive(false);
         InRange = false;
         cue.SetActive(false);     
     }
