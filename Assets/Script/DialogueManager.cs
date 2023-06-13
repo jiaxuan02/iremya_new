@@ -9,7 +9,7 @@ public class DialogueManager : MonoBehaviour
 {
     [Header("Dialogue UI")]
     [SerializeField] private GameObject dialoguePanel;
-    
+     
     [SerializeField] private TextMeshProUGUI dialogueText;
 
     [Header("Choices UI")]
