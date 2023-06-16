@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Lvl2Trigger : MonoBehaviour
+public class Lvl2_Friend_Trigger : MonoBehaviour
 {
     [Header("Visual Cue")]
     [SerializeField] private GameObject cue;

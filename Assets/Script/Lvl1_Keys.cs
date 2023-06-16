@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Key : MonoBehaviour
+public class Lvl1_Keys : MonoBehaviour
 {
     public GameObject door;
     public static bool lockd = true;

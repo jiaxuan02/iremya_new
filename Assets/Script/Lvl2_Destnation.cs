@@ -2,37 +2,31 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Trigger : MonoBehaviour
+public class Lvl2_Destination : MonoBehaviour
 {
     [Header("Visual Cue")]
     [SerializeField] private GameObject cue;
 
-    [Header("JSON file")]
-    [SerializeField] private TextAsset inkJSON;
+    [SerializeField] private Transform destination;
+     private bool InRange;
+ 
+    // Update is called once per frame
+    public Transform GetDestination(){
+        return destination;
+    }
 
-    public static bool policeCalled = false;
-    private bool InRange;
+     private void Awake() {
+        InRange = false;
+        cue.SetActive(false);     
+    }
 
     private void Update() {
-
-        if (InRange && !DialogueManager.GetInstance().dialogueIsPlaying){
+        if (InRange){
             cue.SetActive(true);
-            if(Input.GetKeyDown(KeyCode.F)){
-                if(Key.lockd == true){
-                    DialogueManager.GetInstance().EnterDialogueMode(inkJSON);
-
-                }
-            }
         }
         else{
             cue.SetActive(false);
         }
-    }
-
-    private void Awake() {
-        
-        InRange = false;
-        cue.SetActive(false);     
     }
 
     private void OnTriggerEnter2D(Collider2D collider) {

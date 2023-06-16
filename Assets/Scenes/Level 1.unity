@@ -880,6 +880,7 @@ MonoBehaviour:
   visualcue: {fileID: 309939186}
   inkJSON: {fileID: 4900000, guid: 22000ca06aa56d74781473678a79deeb, type: 3}
   inkJSON2: {fileID: 0}
+  playerInRange: 0
 --- !u!61 &221230888
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1532,7 +1533,7 @@ GameObject:
   - component: {fileID: 312275970}
   - component: {fileID: 312275969}
   m_Layer: 0
-  m_Name: WIN
+  m_Name: Basement_Win
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2334,7 +2335,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &585756009
 Transform:
   m_ObjectHideFlags: 0
@@ -2431,6 +2432,7 @@ MonoBehaviour:
   visualcue: {fileID: 1167086390}
   inkJSON: {fileID: 4900000, guid: 94ef5f7f6603bbd40896e626de0e8a4d, type: 3}
   inkJSON2: {fileID: 4900000, guid: eb1738e275e352a4c87c4e6f713862c4, type: 3}
+  playerInRange: 0
 --- !u!61 &592448723
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5405,7 +5407,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1362303173}
   m_Layer: 0
-  m_Name: trgger
+  m_Name: Win_Trigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

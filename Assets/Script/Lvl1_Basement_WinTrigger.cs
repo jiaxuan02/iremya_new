@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Basement_WinTrigger : MonoBehaviour
+public class Lvl1_Basement_WinTrigger : MonoBehaviour
 {
     //[SerializeField] Score sc;
 

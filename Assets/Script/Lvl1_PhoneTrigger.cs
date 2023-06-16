@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DialogueTrigger : MonoBehaviour
+public class Lvl1_PhoneTrigger : MonoBehaviour
 {
 
     [Header("Visual Cue")]
@@ -21,7 +21,7 @@ public class DialogueTrigger : MonoBehaviour
             visualcue.SetActive(true);
             if(Input.GetKeyDown(KeyCode.F))
             {
-                if(Score.scores == 1)
+                if(Lvl1_Score.scores == 1)
                 {
                     DialogueManager.GetInstance().EnterDialogueMode(inkJSON);
                     policeCalled = true;

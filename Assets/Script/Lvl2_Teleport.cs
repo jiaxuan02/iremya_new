@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class teleport : MonoBehaviour
+public class Lvl2_Teleport : MonoBehaviour
 {
     private GameObject curTel;
 
@@ -12,7 +12,7 @@ public class teleport : MonoBehaviour
         {
             if(curTel != null)
             {
-                transform.position = curTel.GetComponent<destinate>().GetDestination().position;
+                transform.position = curTel.GetComponent<Lvl2_Destination>().GetDestination().position;
             }
         }
     }

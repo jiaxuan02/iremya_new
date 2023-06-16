@@ -5,7 +5,7 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using TMPro;
 
-public class Timer : MonoBehaviour
+public class Lvl1_Timer : MonoBehaviour
 {
     [SerializeField] GameObject losepanel;
     [SerializeField] TextMeshProUGUI timeText;

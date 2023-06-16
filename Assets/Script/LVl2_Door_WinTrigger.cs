@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class winDoor : MonoBehaviour
+public class LVl2_Door_WinTrigger : MonoBehaviour
 {
     [SerializeField] public GameObject cue;
     [SerializeField] private GameObject panel;
