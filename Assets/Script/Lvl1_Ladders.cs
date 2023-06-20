@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Ladders : MonoBehaviour
+public class Lvl1_Ladders : MonoBehaviour
 {
     private float vertical;
     private float speed = 8f;
