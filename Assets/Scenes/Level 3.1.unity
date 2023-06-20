@@ -1796,7 +1796,7 @@ SpriteRenderer:
   m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: d90500d19723e85409ec00f596c178c2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
+  m_FlipX: 1
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 1, y: 1}
@@ -1813,7 +1813,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 317724390}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.38, y: 2.1231, z: 0}
+  m_LocalPosition: {x: -2.15, y: 2.05, z: 0}
   m_LocalScale: {x: 1.1774752, y: 1.2005335, z: 0.968}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3359,6 +3359,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1270853710}
     m_Modifications:
+    - target: {fileID: 1527164914127420100, guid: 08607a9307ed5d84882a2d0da0f5c1c2, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 6.0424805
+      objectReference: {fileID: 0}
     - target: {fileID: 2669111277311280872, guid: 08607a9307ed5d84882a2d0da0f5c1c2, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -5773,6 +5777,10 @@ PrefabInstance:
     - target: {fileID: 1887643655792646341, guid: 8856d6967ca9b194c974f8f12bbc31bc, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4428153244773478317, guid: 8856d6967ca9b194c974f8f12bbc31bc, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 6.0424805
       objectReference: {fileID: 0}
     - target: {fileID: 6832892629505782213, guid: 8856d6967ca9b194c974f8f12bbc31bc, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size

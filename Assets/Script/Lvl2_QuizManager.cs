@@ -5,7 +5,7 @@ using TMPro;
 using UnityEngine.SceneManagement;
 using System.Collections;
 
-public class QuizManager : MonoBehaviour
+public class Lvl2_QuizManager : MonoBehaviour
 {
     public TMP_Text questionText;
     public Button[] answerButtons;
