@@ -11,12 +11,10 @@ public class Lvl4_NPC : MonoBehaviour
 
     [Header("JSON file")]
     [SerializeField] private TextAsset inkJSON;
-    [SerializeField] private TextAsset inkJSON2;
 
-    public static bool policeCalled = false;
     private bool playerInRange;
 
-    private Story story;
+ 
 
     private void Update() {
 
@@ -24,21 +22,7 @@ public class Lvl4_NPC : MonoBehaviour
             visualcue.SetActive(true);
             if(Input.GetKeyDown(KeyCode.F))
             {
-                if(Lvl1_Score.scores == 1)
-                {
                     DialogueManager.GetInstance().EnterDialogueMode(inkJSON);
-                    policeCalled = true;
-
-                    story.BindExternalFunction("startQuest", (string questId) => {
-                        Debug.Log(questId);
-                    });
-
-                }
-                else{
-                    DialogueManager.GetInstance().EnterDialogueMode(inkJSON2) ;
-                    policeCalled = false;
-                
-                }
             }
             
         }

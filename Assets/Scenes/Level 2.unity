@@ -3250,8 +3250,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa794f306d3429f40a64a638d051d018, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  blur: {fileID: 276737968}
-  ink: {fileID: 4900000, guid: 2d07dbf4b91f4c74cbb4e7ba785735d7, type: 3}
 --- !u!1 &525794824
 GameObject:
   m_ObjectHideFlags: 0
@@ -3552,7 +3550,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cue: {fileID: 1167086390}
   door: {fileID: 717780073}
-  inkJSON: {fileID: 4900000, guid: 22000ca06aa56d74781473678a79deeb, type: 3}
+  inkJSON: {fileID: 4900000, guid: 96537902799f4c143b07a788668e7616, type: 3}
 --- !u!1 &600808562
 GameObject:
   m_ObjectHideFlags: 0
@@ -4473,7 +4471,7 @@ GameObject:
   - component: {fileID: 864097044}
   - component: {fileID: 864097043}
   m_Layer: 0
-  m_Name: Telephone books (1)
+  m_Name: books
   m_TagString: Collection
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5071,7 +5069,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1066081911}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 14.53, y: 58.21, z: -10}
+  m_LocalPosition: {x: -8.1, y: 1.1, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -6759,7 +6757,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1399789686}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 14.53, y: 58.21, z: -10}
+  m_LocalPosition: {x: -8.1, y: 1.1, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -8654,7 +8652,7 @@ GameObject:
   - component: {fileID: 1952927281}
   - component: {fileID: 1952927280}
   m_Layer: 0
-  m_Name: Telephone books (2)
+  m_Name: books
   m_TagString: Collection
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8971,7 +8969,7 @@ GameObject:
   - component: {fileID: 2046674569}
   - component: {fileID: 2046674568}
   m_Layer: 0
-  m_Name: Telephone books
+  m_Name: books
   m_TagString: Collection
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9364,11 +9362,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7491230268511173837, guid: ef4af57cd4cb30d48970f1b65dfd1d54, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 14.53
+      value: -8.1
       objectReference: {fileID: 0}
     - target: {fileID: 7491230268511173837, guid: ef4af57cd4cb30d48970f1b65dfd1d54, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 58.21
+      value: 1.1
       objectReference: {fileID: 0}
     - target: {fileID: 7491230268511173837, guid: ef4af57cd4cb30d48970f1b65dfd1d54, type: 3}
       propertyPath: m_LocalPosition.z

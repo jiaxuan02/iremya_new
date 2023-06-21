@@ -237,6 +237,7 @@ public class Lvl2_QuizManager : MonoBehaviour
         yield return new WaitForSeconds(1f);
         wrongPanel.SetActive(false);
     }
+    
 }
 
 [System.Serializable]

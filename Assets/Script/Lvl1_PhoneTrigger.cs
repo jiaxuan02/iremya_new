@@ -16,7 +16,6 @@ public class Lvl1_PhoneTrigger : MonoBehaviour
     public static bool policeCalled = false;
     private bool playerInRange;
 
-    private Story story;
 
     private void Update() {
 
@@ -28,10 +27,6 @@ public class Lvl1_PhoneTrigger : MonoBehaviour
                 {
                     DialogueManager.GetInstance().EnterDialogueMode(inkJSON);
                     policeCalled = true;
-
-                    story.BindExternalFunction("startQuest", (string questId) => {
-                        Debug.Log(questId);
-                    });
 
                 }
                 else{
