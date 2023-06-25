@@ -3,19 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using Ink.Runtime;
 
-public class Lvl4_NPC : MonoBehaviour
+public class Lvl4_WinTrigger1 : MonoBehaviour
 {
 
     [Header("Visual Cue")]
     [SerializeField] private GameObject visualcue;
-    [SerializeField] private GameObject signs;
-
-    [Header("JSON file")]
-    [SerializeField] private TextAsset inkJSON;
-
+    [SerializeField] private GameObject winpanel;
     private bool playerInRange;
-
- 
 
     private void Update() {
 
@@ -23,8 +17,8 @@ public class Lvl4_NPC : MonoBehaviour
             visualcue.SetActive(true);
             if(Input.GetKeyDown(KeyCode.F))
             {
-                    DialogueManager.GetInstance().EnterDialogueMode(inkJSON);
-                    signs.SetActive(true);
+                        winpanel.SetActive(true);
+       
             }
             
         }

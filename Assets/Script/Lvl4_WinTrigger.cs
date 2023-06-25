@@ -3,19 +3,18 @@ using System.Collections.Generic;
 using UnityEngine;
 using Ink.Runtime;
 
-public class Lvl4_NPC : MonoBehaviour
+public class Lvl4_WinTrigger : MonoBehaviour
 {
 
     [Header("Visual Cue")]
     [SerializeField] private GameObject visualcue;
-    [SerializeField] private GameObject signs;
+    [SerializeField] private GameObject police;
 
     [Header("JSON file")]
     [SerializeField] private TextAsset inkJSON;
 
+    public static bool policeCalled = false;
     private bool playerInRange;
-
- 
 
     private void Update() {
 
@@ -24,7 +23,8 @@ public class Lvl4_NPC : MonoBehaviour
             if(Input.GetKeyDown(KeyCode.F))
             {
                     DialogueManager.GetInstance().EnterDialogueMode(inkJSON);
-                    signs.SetActive(true);
+                        police.SetActive(true);
+       
             }
             
         }

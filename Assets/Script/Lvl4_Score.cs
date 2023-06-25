@@ -8,6 +8,7 @@ public class Lvl4_Score : MonoBehaviour
 {
     public GameObject floor3;
     public GameObject floor2;
+    public GameObject losepanel;
     public TextMeshProUGUI myscore;
     public TextMeshProUGUI mylives;
     public static int scores;
@@ -26,6 +27,13 @@ public class Lvl4_Score : MonoBehaviour
 
     private void Update() {
         unlockDoors();
+        mylives.text= "Lives: " + lives;
+        if(lives == 0)
+        {
+            Time.timeScale = 0;
+            losepanel.SetActive(true);
+        }
+
     }
     // Update is called once per frame
     private void OnTriggerEnter2D(Collider2D Coin)
