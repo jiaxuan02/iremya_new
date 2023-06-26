@@ -6,6 +6,7 @@ using TMPro;
 
 public class Lvl4_Score : MonoBehaviour
 {
+    public GameObject polce;
     public GameObject floor3;
     public GameObject floor2;
     public GameObject losepanel;
@@ -18,6 +19,9 @@ public class Lvl4_Score : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        Time.timeScale = 1;
+        lives = 2;
+        losepanel.SetActive(false);
         floor3.SetActive(false);
         floor2.SetActive(false);
         scores = 0;
@@ -32,6 +36,10 @@ public class Lvl4_Score : MonoBehaviour
         {
             Time.timeScale = 0;
             losepanel.SetActive(true);
+        }
+
+        if(scores == 6){
+            polce.SetActive(true);
         }
 
     }

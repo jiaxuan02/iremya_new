@@ -6,6 +6,7 @@ using TMPro;
 
 public class Lvl2_Score : MonoBehaviour
 {
+    [SerializeField] private GameObject doors;
     public TextMeshProUGUI myscore;
     public static int scores;
 
@@ -14,17 +15,21 @@ public class Lvl2_Score : MonoBehaviour
     void Start()
     {
         scores = 0;
-        myscore.text = "Book not found";
+        myscore.text = "Books: " + scores;
     }
 
-    // Update is called once per frame
+    private void Update() {
+        if(scores == 3){
+            doors.SetActive(true);
+        }
+    }
     private void OnTriggerEnter2D(Collider2D Coin)
     {
         if (Coin.CompareTag("Collection"))
         {
             scores++;
             Destroy(Coin.gameObject);//destroy when the player touches the coin
-            myscore.text = "Book Found!!";
+            myscore.text = "Books: " + scores;
         }
     }
 

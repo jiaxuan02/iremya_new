@@ -5,7 +5,7 @@ using TMPro;
 using UnityEngine.SceneManagement;
 using System.Collections;
 
-public class Lvl2_QuizManager : MonoBehaviour
+public class Lvl3_QuizManager : MonoBehaviour
 {
     public TMP_Text questionText;
     public Button[] answerButtons;
@@ -32,6 +32,7 @@ public class Lvl2_QuizManager : MonoBehaviour
 
     private void Start()
     {
+        Time.timeScale = 0;
         // Load and randomize questions
         LoadQuestions();
         quizFinishedPanel.SetActive(false);

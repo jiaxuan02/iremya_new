@@ -9,6 +9,8 @@ public class Lvl4_NPC : MonoBehaviour
     [Header("Visual Cue")]
     [SerializeField] private GameObject visualcue;
     [SerializeField] private GameObject signs;
+    [SerializeField] public GameObject obj;
+    
 
     [Header("JSON file")]
     [SerializeField] private TextAsset inkJSON;
@@ -25,6 +27,7 @@ public class Lvl4_NPC : MonoBehaviour
             {
                     DialogueManager.GetInstance().EnterDialogueMode(inkJSON);
                     signs.SetActive(true);
+                    obj.SetActive(true);
             }
             
         }
