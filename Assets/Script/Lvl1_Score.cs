@@ -7,6 +7,7 @@ using TMPro;
 public class Lvl1_Score : MonoBehaviour
 {
     public TextMeshProUGUI myscore;
+    public GameObject imgs;
     public static int scores;
 
 
@@ -23,6 +24,7 @@ public class Lvl1_Score : MonoBehaviour
         if (Coin.CompareTag("Collection"))
         {
             scores++;
+            imgs.SetActive(false);
             Destroy(Coin.gameObject);//destroy when the player touches the coin
             myscore.text = "Book Found!!";
         }
