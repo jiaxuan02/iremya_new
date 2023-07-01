@@ -3171,6 +3171,26 @@ MonoBehaviour:
   losepanel: {fileID: 1510965906}
   myscore: {fileID: 1177172672}
   mylives: {fileID: 681088913}
+--- !u!95 &765395958
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 765395945}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 566236eab24c0764388a0a1284dca1c9, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
 --- !u!1 &854842688
 GameObject:
   m_ObjectHideFlags: 0
@@ -7965,6 +7985,10 @@ PrefabInstance:
       propertyPath: m_Offset.y
       value: -0.5634883
       objectReference: {fileID: 0}
+    - target: {fileID: 7491230268511173841, guid: ef4af57cd4cb30d48970f1b65dfd1d54, type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 765395958}
     - target: {fileID: 7491230268511173842, guid: ef4af57cd4cb30d48970f1b65dfd1d54, type: 3}
       propertyPath: myscore
       value: 
@@ -7980,6 +8004,34 @@ PrefabInstance:
     - target: {fileID: 7491230268511173843, guid: ef4af57cd4cb30d48970f1b65dfd1d54, type: 3}
       propertyPath: m_CrouchDisableCollider
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7491230268511173843, guid: ef4af57cd4cb30d48970f1b65dfd1d54, type: 3}
+      propertyPath: OnLandEvent.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7491230268511173843, guid: ef4af57cd4cb30d48970f1b65dfd1d54, type: 3}
+      propertyPath: OnLandEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7491230268511173843, guid: ef4af57cd4cb30d48970f1b65dfd1d54, type: 3}
+      propertyPath: OnLandEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 7491230267766226722}
+    - target: {fileID: 7491230268511173843, guid: ef4af57cd4cb30d48970f1b65dfd1d54, type: 3}
+      propertyPath: OnLandEvent.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7491230268511173843, guid: ef4af57cd4cb30d48970f1b65dfd1d54, type: 3}
+      propertyPath: OnLandEvent.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnLanding
+      objectReference: {fileID: 0}
+    - target: {fileID: 7491230268511173843, guid: ef4af57cd4cb30d48970f1b65dfd1d54, type: 3}
+      propertyPath: OnLandEvent.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: PlayerMovement, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7491230268511173843, guid: ef4af57cd4cb30d48970f1b65dfd1d54, type: 3}
+      propertyPath: OnLandEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 7491230268674820920, guid: ef4af57cd4cb30d48970f1b65dfd1d54, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7999,3 +8051,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ef4af57cd4cb30d48970f1b65dfd1d54, type: 3}
+--- !u!114 &7491230267766226722 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7491230268511173841, guid: ef4af57cd4cb30d48970f1b65dfd1d54, type: 3}
+  m_PrefabInstance: {fileID: 7491230267766226721}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 765395945}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1ecb75eee2b31b41864ff5a1d6906bf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
