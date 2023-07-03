@@ -2507,6 +2507,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e731e5cde7da5a94b907d55eeb1f9f04, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  img: {fileID: 0}
   door: {fileID: 1872545693}
 --- !u!1 &448034223
 GameObject:
@@ -4059,6 +4060,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e731e5cde7da5a94b907d55eeb1f9f04, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  img: {fileID: 0}
   door: {fileID: 627652867}
 --- !u!1 &998389526
 GameObject:

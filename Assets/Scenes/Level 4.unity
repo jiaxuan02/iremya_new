@@ -633,6 +633,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 124919197}
   m_CullTransparentMesh: 1
+--- !u!1 &153809044 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6491395157511479599, guid: 8856d6967ca9b194c974f8f12bbc31bc, type: 3}
+  m_PrefabInstance: {fileID: 1348616707}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &178719830
 GameObject:
   m_ObjectHideFlags: 0
@@ -4140,7 +4145,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1066081911}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.56, y: 0.4, z: -10}
+  m_LocalPosition: {x: -7.99, y: 1.73, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -5405,7 +5410,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1399789686}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.56, y: 0.4, z: -10}
+  m_LocalPosition: {x: -7.99, y: 1.73, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6090,6 +6095,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   visualcue: {fileID: 1448447146}
   winpanel: {fileID: 1451597235}
+  scores: {fileID: 153809044}
+  scores2: {fileID: 1926603589}
+  scores3: {fileID: 1746541084}
 --- !u!1 &1621418123
 GameObject:
   m_ObjectHideFlags: 0
@@ -6678,6 +6686,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 626a39bc9439cbb4c87459526e14eed4, type: 3}
+--- !u!1 &1746541084 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5861808979542838693, guid: 8856d6967ca9b194c974f8f12bbc31bc, type: 3}
+  m_PrefabInstance: {fileID: 1348616707}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1819132869
 GameObject:
   m_ObjectHideFlags: 0
@@ -6895,6 +6908,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e019417e32fecdc4795c88dfb45f528a, type: 3}
+--- !u!1 &1926603589 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3289047666949692263, guid: 8856d6967ca9b194c974f8f12bbc31bc, type: 3}
+  m_PrefabInstance: {fileID: 1348616707}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1940152475
 GameObject:
   m_ObjectHideFlags: 0
@@ -7887,11 +7905,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7491230268511173837, guid: ef4af57cd4cb30d48970f1b65dfd1d54, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -6.56
+      value: -7.99
       objectReference: {fileID: 0}
     - target: {fileID: 7491230268511173837, guid: ef4af57cd4cb30d48970f1b65dfd1d54, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.4
+      value: 1.73
       objectReference: {fileID: 0}
     - target: {fileID: 7491230268511173837, guid: ef4af57cd4cb30d48970f1b65dfd1d54, type: 3}
       propertyPath: m_LocalPosition.z
@@ -7997,5 +8015,6 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 0.248
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 7491230268511173842, guid: ef4af57cd4cb30d48970f1b65dfd1d54, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: ef4af57cd4cb30d48970f1b65dfd1d54, type: 3}
