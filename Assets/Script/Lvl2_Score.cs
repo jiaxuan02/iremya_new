@@ -30,16 +30,20 @@ public class Lvl2_Score : MonoBehaviour
     }
 
     private void Update() {
-        if(scores == 3){
-            doors.SetActive(false);
-        }else if(scores == 6){
-            doors2.SetActive(false);
-        }else if(scores == 9){
-            doors3.SetActive(false);
+        if(scores >= 3){
+            Destroy(doors);
+        }
+        if(scores >= 6){
+            Destroy(doors2);
+        }
+        
+        if(scores >= 9){
+            Destroy(doors3);
         }
 
         mylives.text = "Lives: " + lives;
         if(lives == 0){
+            Time.timeScale = 0;
             panels.SetActive(true);
         }
 

@@ -14,6 +14,9 @@ public class Lvl3_QuizManager : MonoBehaviour
     public GameObject endGamePanel;
     public GameObject quizFinishedPanel;
     public GameObject wrongPanel;
+    public GameObject stars1;
+    public GameObject stars2;
+    public GameObject stars3;
     public Image endGameImage;
     public Sprite allWrongImage;
     public Sprite allCorrectImage;
@@ -23,7 +26,7 @@ public class Lvl3_QuizManager : MonoBehaviour
 
     private List<Question> questions;
     private Question currentQuestion;
-    private int remainingLives;
+    private static int remainingLives;
     private float remainingTime;
     private bool waitingForAnswer;
     private bool quizFinished;
@@ -32,6 +35,9 @@ public class Lvl3_QuizManager : MonoBehaviour
 
     private void Start()
     {
+        stars1.SetActive(false);
+        stars2.SetActive(false);
+        stars3.SetActive(false);
         Time.timeScale = 0;
         // Load and randomize questions
         LoadQuestions();
@@ -179,6 +185,16 @@ public class Lvl3_QuizManager : MonoBehaviour
     private void QuizFinished()
     {
         quizFinished = true;
+        if(remainingLives == 3){
+            stars1.SetActive(true);
+            stars2.SetActive(true);
+            stars3.SetActive(true);
+        }else if(remainingLives == 2){
+            stars1.SetActive(true);
+            stars2.SetActive(true);
+        }else if(remainingLives == 1){
+            stars1.SetActive(true);
+        }
         quizFinishedPanel.SetActive(true);
 
         if (correctAnswersCount == answerButtons.Length)
@@ -232,7 +248,6 @@ public class Lvl3_QuizManager : MonoBehaviour
             }
         }
     }
-
     
     private IEnumerator WrongAns(){
         yield return new WaitForSeconds(1f);

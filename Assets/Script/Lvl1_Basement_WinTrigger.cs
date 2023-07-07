@@ -10,6 +10,9 @@ public class Lvl1_Basement_WinTrigger : MonoBehaviour
     [SerializeField] private GameObject visualcue;
 
     [SerializeField] private GameObject panel;
+    [SerializeField] private GameObject stars1;
+    [SerializeField] private GameObject stars2;
+    [SerializeField] private GameObject stars3;
 
     [Header("JSON file")]
     [SerializeField] private TextAsset inkJSON;
@@ -27,7 +30,17 @@ public class Lvl1_Basement_WinTrigger : MonoBehaviour
 
                 }
                 else{
+                    Time.timeScale = 0;
                     panel.SetActive(true);
+                    if(Lvl1_Score.scores == 1){
+                        stars1.SetActive(true);
+                    }
+                    if(Lvl1_Keys.sc == 3){
+                        stars2.SetActive(true);
+                    }
+                    if(Lvl1_PhoneTrigger.policeCalled == true){
+                        stars3.SetActive(true);
+                    }
                 }
                 
             }

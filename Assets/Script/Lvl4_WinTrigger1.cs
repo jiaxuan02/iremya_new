@@ -20,14 +20,15 @@ public class Lvl4_WinTrigger1 : MonoBehaviour
             visualcue.SetActive(true);
             if(Input.GetKeyDown(KeyCode.F))
             {
-                        winpanel.SetActive(true);
-                        scores.SetActive(true);
-                        if(Lvl4_Score.scores == 6){
-                            scores2.SetActive(true);
-                        }
-                        if(Lvl4_Score.lives == 2){
-                            scores3.SetActive(true);
-                        }
+                Time.timeScale = 0;
+                winpanel.SetActive(true);
+                scores.SetActive(true);
+                if(Lvl4_Score.scores == 6){
+                    scores2.SetActive(true);
+                }
+                if(Lvl4_Score.lives == 2){
+                    scores3.SetActive(true);
+                }
        
             }
             
