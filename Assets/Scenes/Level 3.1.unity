@@ -3833,7 +3833,6 @@ GameObject:
   - component: {fileID: 891955738}
   - component: {fileID: 891955740}
   - component: {fileID: 891955739}
-  - component: {fileID: 891955741}
   m_Layer: 5
   m_Name: dialoguePanel
   m_TagString: Untagged
@@ -3905,34 +3904,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 891955737}
   m_CullTransparentMesh: 1
---- !u!114 &891955741
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 891955737}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6d1abb5068a91dd4e89d107d0e048fdc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  questionText: {fileID: 0}
-  answerButtons: []
-  timerText: {fileID: 0}
-  livesText: {fileID: 0}
-  endGamePanel: {fileID: 0}
-  quizFinishedPanel: {fileID: 0}
-  wrongPanel: {fileID: 0}
-  stars1: {fileID: 0}
-  stars2: {fileID: 0}
-  stars3: {fileID: 0}
-  endGameImage: {fileID: 0}
-  allWrongImage: {fileID: 0}
-  allCorrectImage: {fileID: 0}
-  someCorrectImage: {fileID: 0}
-  restartButton: {fileID: 0}
-  sceneButton: {fileID: 0}
 --- !u!1 &949951261
 GameObject:
   m_ObjectHideFlags: 0
