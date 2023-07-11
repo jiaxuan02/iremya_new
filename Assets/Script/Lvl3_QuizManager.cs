@@ -68,7 +68,7 @@ public class Lvl3_QuizManager : MonoBehaviour
 
         // Question 2
         Question q2 = new Question();
-        q2.questionText = "Do you want this candy?";
+        q2.questionText = "Do you want to eat candy?";
         q2.answerOptions = new string[] { "No", "Yes"};
         q2.correctAnswerIndex = 0;
         questions.Add(q2);
@@ -82,7 +82,8 @@ public class Lvl3_QuizManager : MonoBehaviour
 
         // Question 4
         Question q4 = new Question();
-        q4.questionText = "Come follow me i would bring you to the playground?";
+        q4.questionText = "Do you want to play my Ipad? I leave it in my car, we can go get it together.";
+        //q4.questionText = "Come follow me i would bring you to the playground?";
         q4.answerOptions = new string[] { "No", "Yes"};
         q4.correctAnswerIndex = 0;
         questions.Add(q4);
