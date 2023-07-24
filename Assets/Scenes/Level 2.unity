@@ -1888,7 +1888,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1887643655792646341, guid: 8856d6967ca9b194c974f8f12bbc31bc, type: 3}
       propertyPath: m_Name
-      value: win (1)
+      value: winPanel
       objectReference: {fileID: 0}
     - target: {fileID: 1887643655792646341, guid: 8856d6967ca9b194c974f8f12bbc31bc, type: 3}
       propertyPath: m_IsActive
@@ -4441,6 +4441,7 @@ MonoBehaviour:
   stars1: {fileID: 0}
   stars2: {fileID: 0}
   stars3: {fileID: 0}
+  winPanel: {fileID: 0}
 --- !u!1 &622836036
 GameObject:
   m_ObjectHideFlags: 0
@@ -4905,7 +4906,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2669111277311280873, guid: 08607a9307ed5d84882a2d0da0f5c1c2, type: 3}
       propertyPath: m_Name
-      value: lose (1)
+      value: losePanel
       objectReference: {fileID: 0}
     - target: {fileID: 2669111277311280873, guid: 08607a9307ed5d84882a2d0da0f5c1c2, type: 3}
       propertyPath: m_IsActive
