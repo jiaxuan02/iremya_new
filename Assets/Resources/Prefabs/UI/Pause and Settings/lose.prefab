@@ -35,7 +35,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 40.112854, y: 276.0323}
+  m_AnchoredPosition: {x: 40.112915, y: 276.0323}
   m_SizeDelta: {x: -392.1705, y: -262.3907}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6628467497033568023
@@ -235,6 +235,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &6029361255235421794
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -264,7 +276,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2669111277311280872
 RectTransform:
   m_ObjectHideFlags: 0
@@ -274,7 +286,7 @@ RectTransform:
   m_GameObject: {fileID: 2669111277311280873}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.5494792, y: 0.5494792, z: 0.5494792}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1527164914127420100}
@@ -623,6 +635,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1067715214665594353
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -746,7 +770,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 48.677124, y: 6.042511}
+  m_AnchoredPosition: {x: 48.677124, y: 6.0424805}
   m_SizeDelta: {x: -192.0812, y: 2.6283}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3465639156114790118
