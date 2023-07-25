@@ -47,6 +47,10 @@ public class LVl2_Door_WinTrigger : MonoBehaviour
                 }
 
                 win = true;
+                if (win == true)
+                {
+                    panel.SetActive(true);
+                }
             }
         }
         else
