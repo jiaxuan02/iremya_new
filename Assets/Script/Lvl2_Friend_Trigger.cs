@@ -12,7 +12,7 @@ public class Lvl2_Friend_Trigger : MonoBehaviour
     [Header("JSON file")]
     [SerializeField] private TextAsset inkJSON;
 
-    public static bool win = false;
+    public static bool talked = false;
 
     public static bool policeCalled = false;
     private bool InRange;
@@ -24,7 +24,7 @@ public class Lvl2_Friend_Trigger : MonoBehaviour
             if(Input.GetKeyDown(KeyCode.F)){
                     DialogueManager.GetInstance().EnterDialogueMode(inkJSON);
                     door.SetActive(true);
-                    win = true;
+                    talked = true;
             }
         }
         else{

@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-<<<<<<<< Updated upstream:Assets/Animations/Player/player_boy.meta
-guid: f132f21c280aa3d4db35201ad205c1ac
-folderAsset: yes
+<<<<<<<< HEAD:Assets/jx/jellybost.zip.meta
+guid: ef6c78685d2b3714488be28da5388012
 ========
-guid: 0d22725a157596a418e38cbef3686096
->>>>>>>> Stashed changes:Assets/Scenes/Level 1 test.unity.meta
+guid: c59c7f073c12c0044b51085f166e0416
+folderAsset: yes
+>>>>>>>> test2:Assets/Animations/Player/player_boy.meta
 DefaultImporter:
   externalObjects: {}
   userData: 

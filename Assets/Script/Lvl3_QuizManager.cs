@@ -14,6 +14,9 @@ public class Lvl3_QuizManager : MonoBehaviour
     public GameObject endGamePanel;
     public GameObject quizFinishedPanel;
     public GameObject wrongPanel;
+    public GameObject stars1;
+    public GameObject stars2;
+    public GameObject stars3;
     public Image endGameImage;
     public Sprite allWrongImage;
     public Sprite allCorrectImage;
@@ -23,7 +26,7 @@ public class Lvl3_QuizManager : MonoBehaviour
 
     private List<Question> questions;
     private Question currentQuestion;
-    private int remainingLives;
+    private static int remainingLives;
     private float remainingTime;
     private bool waitingForAnswer;
     private bool quizFinished;
@@ -32,6 +35,9 @@ public class Lvl3_QuizManager : MonoBehaviour
 
     private void Start()
     {
+        stars1.SetActive(false);
+        stars2.SetActive(false);
+        stars3.SetActive(false);
         Time.timeScale = 0;
         // Load and randomize questions
         LoadQuestions();
@@ -62,7 +68,7 @@ public class Lvl3_QuizManager : MonoBehaviour
 
         // Question 2
         Question q2 = new Question();
-        q2.questionText = "Do you want this candy?";
+        q2.questionText = "Do you want to eat candy?";
         q2.answerOptions = new string[] { "No", "Yes"};
         q2.correctAnswerIndex = 0;
         questions.Add(q2);
@@ -76,7 +82,8 @@ public class Lvl3_QuizManager : MonoBehaviour
 
         // Question 4
         Question q4 = new Question();
-        q4.questionText = "Come follow me i would bring you to the playground?";
+        q4.questionText = "Do you want to play my Ipad? I leave it in my car, we can go get it together.";
+        //q4.questionText = "Come follow me i would bring you to the playground?";
         q4.answerOptions = new string[] { "No", "Yes"};
         q4.correctAnswerIndex = 0;
         questions.Add(q4);
@@ -179,6 +186,16 @@ public class Lvl3_QuizManager : MonoBehaviour
     private void QuizFinished()
     {
         quizFinished = true;
+        if(remainingLives == 3){
+            stars1.SetActive(true);
+            stars2.SetActive(true);
+            stars3.SetActive(true);
+        }else if(remainingLives == 2){
+            stars1.SetActive(true);
+            stars2.SetActive(true);
+        }else if(remainingLives == 1){
+            stars1.SetActive(true);
+        }
         quizFinishedPanel.SetActive(true);
 
         if (correctAnswersCount == answerButtons.Length)
@@ -232,7 +249,6 @@ public class Lvl3_QuizManager : MonoBehaviour
             }
         }
     }
-
     
     private IEnumerator WrongAns(){
         yield return new WaitForSeconds(1f);
