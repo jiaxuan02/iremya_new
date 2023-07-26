@@ -14,6 +14,9 @@ public class Lvl4_Score : MonoBehaviour
     public TextMeshProUGUI mylives;
     public static int scores;
     public static int lives = 2;
+    [SerializeField] private GameObject liftPanel;
+    [SerializeField] private GameObject txt1;
+    [SerializeField] private GameObject txt2;
 
 
     // Start is called before the first frame update
@@ -24,6 +27,9 @@ public class Lvl4_Score : MonoBehaviour
         losepanel.SetActive(false);
         floor3.SetActive(false);
         floor2.SetActive(false);
+        liftPanel.SetActive(false);
+        txt1.SetActive(false);
+        txt2.SetActive(false);
         scores = 0;
         myscore.text = "Scores: " + scores;
         mylives.text = "Lives: " + lives;
@@ -58,10 +64,18 @@ public class Lvl4_Score : MonoBehaviour
         if(scores == 3)
         {
             floor3.SetActive(true);
+            liftPanel.SetActive(true);
+            txt1.SetActive(true);
+            txt2.SetActive(false);
+
         }
-        
-        if(scores == 6){
+
+        if (scores == 6){
             floor2.SetActive(true);
+            liftPanel.SetActive(true);
+            txt1.SetActive(false);
+            txt2.SetActive(true);
+
         }
     }
 
