@@ -11,54 +11,66 @@ public class PlayerMovement : MonoBehaviour
     public float runSpeed = 40f;
 
     float horizontalMove = 0f;
-
     bool jump = false;
     bool crouch = false;
+    private bool inDialogue = false; // Flag to track if the player is in dialogue
 
-    private Lvl1_Ladders ladderController; // Reference to Lvl1_Ladders script //new
+    private DialogueSystem dialogueSystem; // Reference to the DialogueSystem script
+    private Lvl1_Ladders ladderController; // Reference to the Lvl1_Ladders script
 
-    private void Start()
+    void Start()
     {
-        ladderController = GetComponent<Lvl1_Ladders>(); // Get the Lvl1_Ladders script from the same GameObject //new
+        dialogueSystem = FindObjectOfType<DialogueSystem>(); // Find the DialogueSystem in the scene
+        ladderController = GetComponent<Lvl1_Ladders>(); // Get the Lvl1_Ladders script from the same GameObject
     }
 
-    // Update is called once per frame
     void Update()
     {
-        horizontalMove = Input.GetAxisRaw("Horizontal") * runSpeed;
-
-        animator.SetFloat("Speed", Mathf.Abs(horizontalMove)); //animation run
-
-        if (Input.GetButtonDown("Jump"))
+        // Check if the dialogue panel is active, if yes, disable movement controls
+        if (inDialogue || (dialogueSystem != null && dialogueSystem.dialoguePanel.activeSelf))
         {
-            jump = true;
-            animator.SetBool("IsJumping", true); //animation jump
-        }
-
-        if (Input.GetButtonDown("Crouch"))
-        {
-            crouch = true;
-        }
-        else if (Input.GetButtonUp("Crouch"))
-        {
+            horizontalMove = 0f;
+            jump = false;
             crouch = false;
+            animator.SetFloat("Speed", 0f); // Stop the run animation
         }
-
-        if (ladderController != null && ladderController.isClimbing) // Check if ladderController is not null before accessing its members //new
+        else // Enable movement controls when not in dialogue
         {
-            // Check if the player is pressing "W" (up) or "S" (down) to play the climbing animation
-            if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.S))
+            horizontalMove = Input.GetAxisRaw("Horizontal") * runSpeed;
+            animator.SetFloat("Speed", Mathf.Abs(horizontalMove)); //animation run
+
+            if (Input.GetButtonDown("Jump"))
             {
-                animator.SetBool("IsClimbing", true);
+                jump = true;
+                animator.SetBool("IsJumping", true); //animation jump
+            }
+
+            if (Input.GetButtonDown("Crouch"))
+            {
+                crouch = true;
+            }
+            else if (Input.GetButtonUp("Crouch"))
+            {
+                crouch = false;
+            }
+
+            // Check if ladderController is not null before accessing its members
+            if (ladderController != null && ladderController.isClimbing)
+            {
+                // Check if the player is pressing "W" (up) or "S" (down) to play the climbing animation
+                if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.S))
+                {
+                    animator.SetBool("IsClimbing", true);
+                }
+                else
+                {
+                    animator.SetBool("IsClimbing", false);
+                }
             }
             else
             {
                 animator.SetBool("IsClimbing", false);
             }
-        }
-        else
-        {
-            animator.SetBool("IsClimbing", false);
         }
     }
 
@@ -69,7 +81,7 @@ public class PlayerMovement : MonoBehaviour
 
     void FixedUpdate()
     {
-        if (DialogueManager.GetInstance().dialogueIsPlaying)
+        if (DialogueManager.GetInstance().dialogueIsPlaying || inDialogue)
         {
             return;
         }
@@ -84,5 +96,11 @@ public class PlayerMovement : MonoBehaviour
         {
             Destroy(gameObject);
         }
+    }
+
+    // Method to set the inDialogue flag
+    public void SetInDialogue(bool value)
+    {
+        inDialogue = value;
     }
 }
