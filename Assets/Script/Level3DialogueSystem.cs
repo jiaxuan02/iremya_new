@@ -22,6 +22,7 @@ public class Level3DialogueLine
 
 public class Level3DialogueSystem : MonoBehaviour
 {
+    public GameObject unhideMe;
     public Text dialogueTextLevel3;
     public TextMeshProUGUI dialogueTextMeshProLevel3;
     public Button continueButtonLevel3;
@@ -29,7 +30,7 @@ public class Level3DialogueSystem : MonoBehaviour
     public Level3DialogueSet[] dialogueSetsLevel3;
     public GameObject dialoguePanelLevel3; // Reference to the GameObject representing the dialogue panel
 
-    public AudioClip sceneStartAudioClip; // Audio clip to play on scene start
+    public AudioClip audioClipOnClick; // Audio clip to play on button click
 
     private int currentSetIndexLevel3 = 0;
     private int currentLineIndexLevel3 = 0;
@@ -37,19 +38,6 @@ public class Level3DialogueSystem : MonoBehaviour
     private bool dialogueInProgressLevel3 = false;
 
     private PlayerMovement playerMovementLevel3; // Reference to the PlayerMovement script on the player
-
-    private void Awake()
-    {
-        // Check if TextMeshPro is available and should be used
-        useTextMeshProLevel3 = dialogueTextMeshProLevel3 != null;
-
-        // Play the scene start audio clip, if available
-        if (sceneStartAudioClip != null && voiceSourceLevel3 != null)
-        {
-            voiceSourceLevel3.clip = sceneStartAudioClip;
-            voiceSourceLevel3.Play();
-        }
-    }
 
     private void Start()
     {
@@ -166,5 +154,20 @@ public class Level3DialogueSystem : MonoBehaviour
         
         // Re-enable movement controls after the dialogue ends
         playerMovementLevel3.SetInDialogue(false);
+    }
+
+    // Method to be called on button click to play the assigned audio clip
+    public void PlayAudioClipOnClick()
+    {
+        if (audioClipOnClick != null && voiceSourceLevel3 != null)
+        {
+            voiceSourceLevel3.clip = audioClipOnClick;
+            voiceSourceLevel3.Play();
+        }
+    }
+
+    public void UnhideThisThing()
+    {
+        unhideMe.SetActive(true);
     }
 }
