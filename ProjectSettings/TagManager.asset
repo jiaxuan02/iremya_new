@@ -15,6 +15,7 @@ TagManager:
   - Door
   - Teleporter
   - Confiner
+  - BadNPC
   layers:
   - Default
   - TransparentFX
