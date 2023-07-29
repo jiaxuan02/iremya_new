@@ -24,6 +24,9 @@ public class Lvl3_QuizManager : MonoBehaviour
     public Button restartButton;
     public Button sceneButton;
 
+    // Add the AudioSource component to the Lvl3_QuizManager GameObject in the Inspector
+    public AudioSource audioSource;
+
     private List<Question> questions;
     private Question currentQuestion;
     private static int remainingLives;
@@ -50,6 +53,14 @@ public class Lvl3_QuizManager : MonoBehaviour
 
         livesText.text = "Lives: " + remainingLives.ToString();
 
+        // Set up the AudioSource component
+        if (audioSource == null)
+        {
+            audioSource = gameObject.AddComponent<AudioSource>();
+        }
+
+        audioSource.playOnAwake = false;
+
         // Start the quiz
         LoadNextQuestion();
     }
@@ -62,15 +73,19 @@ public class Lvl3_QuizManager : MonoBehaviour
         // Question 1
         Question q1 = new Question();
         q1.questionText = "Are you waiting for your the bus?";
-        q1.answerOptions = new string[] { "No", "Yes"};
+        q1.answerOptions = new string[] { "No", "Yes" };
         q1.correctAnswerIndex = 1;
+        // Assign the voice line for Question 1
+        q1.voiceLine = Resources.Load<AudioClip>("Liangfenzhong");
         questions.Add(q1);
 
         // Question 2
         Question q2 = new Question();
         q2.questionText = "Do you want to eat candy?";
-        q2.answerOptions = new string[] { "No", "Yes"};
+        q2.answerOptions = new string[] { "No", "Yes" };
         q2.correctAnswerIndex = 0;
+        // Assign the voice line for Question 2
+        q2.voiceLine = Resources.Load<AudioClip>("Liangfenzhong");
         questions.Add(q2);
 
         // Question 3
@@ -78,14 +93,17 @@ public class Lvl3_QuizManager : MonoBehaviour
         q3.questionText = "Do you want me to send you home?";
         q3.answerOptions = new string[] { "No", "Yes" };
         q3.correctAnswerIndex = 0;
+        // Assign the voice line for Question 3
+        q3.voiceLine = Resources.Load<AudioClip>("Liangfenzhong");
         questions.Add(q3);
 
         // Question 4
         Question q4 = new Question();
-        q4.questionText = "Do you want to play my Ipad? I leave it in my car, we can go get it together.";
-        //q4.questionText = "Come follow me i would bring you to the playground?";
-        q4.answerOptions = new string[] { "No", "Yes"};
+        q4.questionText = "Do you want to play my iPad? I left it in my car. We can go get it together.";
+        q4.answerOptions = new string[] { "No", "Yes" };
         q4.correctAnswerIndex = 0;
+        // Assign the voice line for Question 4
+        q4.voiceLine = Resources.Load<AudioClip>("Liangfenzhong");
         questions.Add(q4);
     }
 
@@ -99,6 +117,15 @@ public class Lvl3_QuizManager : MonoBehaviour
     {
         // Set the question text
         questionText.text = question.questionText;
+
+        // Play the voice line for the current question
+        if (question.voiceLine != null)
+        {
+            // Stop any currently playing voice clip before playing the new one
+            audioSource.Stop();
+            // Play the new voice clip
+            audioSource.PlayOneShot(question.voiceLine);
+        }
 
         // Assign the answer options to the buttons
         for (int i = 0; i < answerButtons.Length; i++)
@@ -186,14 +213,19 @@ public class Lvl3_QuizManager : MonoBehaviour
     private void QuizFinished()
     {
         quizFinished = true;
-        if(remainingLives == 3){
+        if (remainingLives == 3)
+        {
             stars1.SetActive(true);
             stars2.SetActive(true);
             stars3.SetActive(true);
-        }else if(remainingLives == 2){
+        }
+        else if (remainingLives == 2)
+        {
             stars1.SetActive(true);
             stars2.SetActive(true);
-        }else if(remainingLives == 1){
+        }
+        else if (remainingLives == 1)
+        {
             stars1.SetActive(true);
         }
         quizFinishedPanel.SetActive(true);
@@ -249,12 +281,12 @@ public class Lvl3_QuizManager : MonoBehaviour
             }
         }
     }
-    
-    private IEnumerator WrongAns(){
+
+    private IEnumerator WrongAns()
+    {
         yield return new WaitForSeconds(1f);
         wrongPanel.SetActive(false);
     }
-    
 }
 
 [System.Serializable]
@@ -263,6 +295,7 @@ public class Question
     public string questionText;
     public string[] answerOptions;
     public int correctAnswerIndex;
+    public AudioClip voiceLine; // New field for the voice line
 }
 
 public static class ListExtensions

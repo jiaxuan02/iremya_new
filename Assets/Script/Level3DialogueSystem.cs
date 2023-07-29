@@ -1,5 +1,4 @@
 using UnityEngine;
-using UnityEngine.Events;
 using UnityEngine.UI;
 using TMPro;
 
@@ -22,99 +21,113 @@ public class Level3DialogueLine
 
 public class Level3DialogueSystem : MonoBehaviour
 {
-    public GameObject unhideMe;
-    public Text dialogueTextLevel3;
-    public TextMeshProUGUI dialogueTextMeshProLevel3;
-    public Button continueButtonLevel3;
-    public AudioSource voiceSourceLevel3; // Reference to an AudioSource component to play voice clips
-    public Level3DialogueSet[] dialogueSetsLevel3;
-    public GameObject dialoguePanelLevel3; // Reference to the GameObject representing the dialogue panel
-
-    public AudioClip audioClipOnClick; // Audio clip to play on button click
-
-    private int currentSetIndexLevel3 = 0;
-    private int currentLineIndexLevel3 = 0;
-    private bool useTextMeshProLevel3;
-    private bool dialogueInProgressLevel3 = false;
-
-    private PlayerMovement playerMovementLevel3; // Reference to the PlayerMovement script on the player
+    public Text dialogueText;
+    public TextMeshProUGUI dialogueTextMeshPro;
+    public Button continueButton;
+    public AudioSource voiceSource; // Reference to an AudioSource component to play voice clips
+    public Level3DialogueSet[] dialogueSets;
+    private int currentSetIndex = 0;
+    private int currentLineIndex = 0;
+    private bool useTextMeshPro;
 
     private void Start()
     {
-        if (dialogueSetsLevel3.Length == 0)
+        if (dialogueSets.Length == 0)
         {
             Debug.LogError("No dialogue sets defined!");
             return;
         }
 
+        // Check if TextMeshPro is available and should be used
+        useTextMeshPro = dialogueTextMeshPro != null;
+
         // Set the initial dialogue text
-        UpdateLevel3DialogueText();
+        UpdateDialogueText();
+
+      
 
         // Attach the button click event
-        continueButtonLevel3.onClick.AddListener(ProgressLevel3Dialogue);
-
-        // Get the PlayerMovement component from the player
-        playerMovementLevel3 = FindObjectOfType<PlayerMovement>();
+        continueButton.onClick.AddListener(ProgressLevel3Dialogue);
     }
 
-    public void ProgressLevel3Dialogue()
+    private void Update()
     {
-        if (!dialogueInProgressLevel3) // Prevent multiple clicks while dialogue is in progress
+        // Empty function
+        
+    }
+
+    private void ProgressLevel3Dialogue()
+    {
+        Level3DialogueSet currentSet = dialogueSets[currentSetIndex];
+        Level3DialogueLine currentLine = currentSet.dialogueLines[currentLineIndex];
+
+        // Play the voice clip, if available
+        if (currentLine.voiceClip != null && voiceSource != null)
         {
-            dialogueInProgressLevel3 = true;
+            voiceSource.clip = currentLine.voiceClip;
+            voiceSource.Play();
+        }
 
-            Level3DialogueSet currentSetLevel3 = dialogueSetsLevel3[currentSetIndexLevel3];
-            if (currentLineIndexLevel3 < currentSetLevel3.dialogueLines.Length - 1) // Adjusted condition here
+        // Hide or show objects after dialogue
+        HideObjects(currentLine.objectsToHide);
+        ShowObjects(currentLine.objectsToShow);
+
+        // Increase the current line index
+        currentLineIndex++;
+
+        // Check if the dialogue set has reached the end
+        if (currentLineIndex >= currentSet.dialogueLines.Length)
+        {
+            // Check if there are more dialogue sets
+            if (currentSetIndex + 1 < dialogueSets.Length)
             {
-                Level3DialogueLine currentLineLevel3 = currentSetLevel3.dialogueLines[currentLineIndexLevel3];
-
-                // Play the voice clip, if available
-                if (currentLineLevel3.voiceClip != null && voiceSourceLevel3 != null)
-                {
-                    voiceSourceLevel3.clip = currentLineLevel3.voiceClip;
-                    voiceSourceLevel3.Play();
-                }
-
-                // Hide or show objects after dialogue
-                HideLevel3Objects(currentLineLevel3.objectsToHide);
-                ShowLevel3Objects(currentLineLevel3.objectsToShow);
-
-                // Increase the current line index
-                currentLineIndexLevel3++;
-
-                // Update the dialogue text
-                UpdateLevel3DialogueText();
+                // Move to the next dialogue set
+                currentSetIndex++;
+                currentLineIndex = 0;
+                UpdateDialogueText();
             }
             else
             {
-                // Dialogue has ended, close the dialogue panel
-                CloseLevel3DialoguePanel();
+                // Dialogue has ended, you can perform any necessary actions here
+                Debug.Log("Dialogue Ended");
+                // Hide or show objects after the final dialogue set if needed
+                HideOrShowObjectsAfterLevel3Dialogue();
             }
-
-            dialogueInProgressLevel3 = false;
         }
-    }
-
-    private void UpdateLevel3DialogueText()
-    {
-        Level3DialogueSet currentSetLevel3 = dialogueSetsLevel3[currentSetIndexLevel3];
-        if (currentLineIndexLevel3 < currentSetLevel3.dialogueLines.Length)
+        else
         {
-            Level3DialogueLine currentLineLevel3 = currentSetLevel3.dialogueLines[currentLineIndexLevel3];
-            string dialogueLevel3 = currentLineLevel3.dialogueText;
-
-            if (useTextMeshProLevel3)
-            {
-                dialogueTextMeshProLevel3.text = dialogueLevel3;
-            }
-            else
-            {
-                dialogueTextLevel3.text = dialogueLevel3;
-            }
+            // Update the dialogue text
+            UpdateDialogueText();
         }
     }
 
-    private void HideLevel3Objects(GameObject[] objectsToHide)
+    private void UpdateDialogueText()
+    {
+        Level3DialogueSet currentSet = dialogueSets[currentSetIndex];
+        Level3DialogueLine currentLine = currentSet.dialogueLines[currentLineIndex];
+        string dialogue = currentLine.dialogueText;
+
+        if (useTextMeshPro)
+        {
+            dialogueTextMeshPro.text = dialogue;
+        }
+        else
+        {
+            dialogueText.text = dialogue;
+        }
+    }
+
+    private void HideOrShowObjectsAfterLevel3Dialogue()
+    {
+        Level3DialogueSet currentSet = dialogueSets[currentSetIndex];
+        Level3DialogueLine lastLine = currentSet.dialogueLines[currentSet.dialogueLines.Length - 1];
+
+        // Hide or show objects after the final dialogue set if needed
+        HideObjects(lastLine.objectsToHide);
+        ShowObjects(lastLine.objectsToShow);
+    }
+
+    private void HideObjects(GameObject[] objectsToHide)
     {
         foreach (GameObject obj in objectsToHide)
         {
@@ -125,7 +138,7 @@ public class Level3DialogueSystem : MonoBehaviour
         }
     }
 
-    private void ShowLevel3Objects(GameObject[] objectsToShow)
+    private void ShowObjects(GameObject[] objectsToShow)
     {
         foreach (GameObject obj in objectsToShow)
         {
@@ -134,40 +147,5 @@ public class Level3DialogueSystem : MonoBehaviour
                 obj.SetActive(true);
             }
         }
-    }
-
-    private void CloseLevel3DialoguePanel()
-    {
-        // Hide the dialogue panel
-        dialoguePanelLevel3.SetActive(false);
-
-        // Reset the currentSetIndex and currentLineIndex when the dialogue ends
-        currentSetIndexLevel3 = 0;
-        currentLineIndexLevel3 = 0;
-
-        // Call the EndDialogue method on the NPCInteraction script (if it exists)
-        NPCInteraction npcInteractionLevel3 = GetComponent<NPCInteraction>();
-        if (npcInteractionLevel3 != null)
-        {
-            npcInteractionLevel3.EndDialogue();
-        }
-        
-        // Re-enable movement controls after the dialogue ends
-        playerMovementLevel3.SetInDialogue(false);
-    }
-
-    // Method to be called on button click to play the assigned audio clip
-    public void PlayAudioClipOnClick()
-    {
-        if (audioClipOnClick != null && voiceSourceLevel3 != null)
-        {
-            voiceSourceLevel3.clip = audioClipOnClick;
-            voiceSourceLevel3.Play();
-        }
-    }
-
-    public void UnhideThisThing()
-    {
-        unhideMe.SetActive(true);
     }
 }
