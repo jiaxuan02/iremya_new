@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 7848ad427f398154a957d70aa43f0a0c
+guid: 8a6b769b4053a8b489b02b2f78f09324
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -52,7 +52,7 @@ TextureImporter:
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
-  spriteTessellationDetail: -1
+  spriteTessellationDetail: 0
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
@@ -102,7 +102,7 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
-    buildTarget: Android
+    buildTarget: WebGL
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -114,7 +114,7 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
-    buildTarget: WebGL
+    buildTarget: Android
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -128,19 +128,15 @@ TextureImporter:
   spriteSheet:
     serializedVersion: 2
     sprites: []
-<<<<<<< Updated upstream:Assets/Art/New Folder/char 2.0/girl/climb1.png.meta
-    outline: []
-=======
     outline:
-    - - {x: -244.5, y: -341.5}
-      - {x: -244.5, y: 633.5}
-      - {x: 245.5, y: 633.5}
-      - {x: 245.5, y: -341.5}
->>>>>>> Stashed changes:Assets/Art/sprite/teacher2 1.png.meta
+    - - {x: -260, y: -171}
+      - {x: -260, y: 624}
+      - {x: 256, y: 624}
+      - {x: 256, y: -171}
     physicsShape: []
     bones: []
     spriteID: 5e97eb03825dee720800000000000000
-    internalID: 0
+    internalID: 1537655665
     vertices: []
     indices: 
     edges: []
