@@ -3199,7 +3199,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &477027797
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3642,6 +3642,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1270853710}
     m_Modifications:
+    - target: {fileID: 671247649938294452, guid: 8546531411dbc0b49a84367040300ab7, type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 1270853711}
     - target: {fileID: 764204291256726770, guid: 8546531411dbc0b49a84367040300ab7, type: 3}
       propertyPath: m_text
       value: You can talk to strangers when these signs show
@@ -3921,6 +3925,10 @@ PrefabInstance:
     - target: {fileID: 3871185557986623770, guid: 8546531411dbc0b49a84367040300ab7, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 245.8021
+      objectReference: {fileID: 0}
+    - target: {fileID: 3871185557986623771, guid: 8546531411dbc0b49a84367040300ab7, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3871185558289137539, guid: 8546531411dbc0b49a84367040300ab7, type: 3}
       propertyPath: m_SizeDelta.x
@@ -6790,6 +6798,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PauseButton
       objectReference: {fileID: 0}
+    - target: {fileID: 3450852987079973241, guid: 6f0b5c2450279ef4c8557b080f9c43bd, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3450852987079973242, guid: 6f0b5c2450279ef4c8557b080f9c43bd, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -7233,6 +7245,7 @@ GameObject:
   - component: {fileID: 1016825384}
   - component: {fileID: 1016825383}
   - component: {fileID: 1016825382}
+  - component: {fileID: 1016825385}
   m_Layer: 5
   m_Name: BtnInfo
   m_TagString: Untagged
@@ -7316,6 +7329,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 1016825385}
+        m_TargetAssemblyTypeName: buttonSound, Assembly-CSharp
+        m_MethodName: ButtonClicked
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &1016825383
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7354,6 +7379,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1016825380}
   m_CullTransparentMesh: 1
+--- !u!114 &1016825385
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1016825380}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74edf87751636f245a470db65673a89a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  button: {fileID: 1016825382}
+  audioSource: {fileID: 1270853711}
 --- !u!1 &1026646502
 GameObject:
   m_ObjectHideFlags: 0
@@ -10216,6 +10255,7 @@ GameObject:
   - component: {fileID: 1398451319}
   - component: {fileID: 1398451318}
   - component: {fileID: 1398451317}
+  - component: {fileID: 1398451320}
   m_Layer: 5
   m_Name: BtnInfo (1)
   m_TagString: Untagged
@@ -10299,6 +10339,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 1398451320}
+        m_TargetAssemblyTypeName: buttonSound, Assembly-CSharp
+        m_MethodName: ButtonClicked
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &1398451318
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10337,6 +10389,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1398451315}
   m_CullTransparentMesh: 1
+--- !u!114 &1398451320
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1398451315}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74edf87751636f245a470db65673a89a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  button: {fileID: 1398451317}
+  audioSource: {fileID: 1270853711}
 --- !u!1 &1399789686
 GameObject:
   m_ObjectHideFlags: 0
@@ -10947,6 +11013,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1868833729}
     m_Modifications:
+    - target: {fileID: 2050023531690459185, guid: 75a4cbffb157efa4f882207171f982e6, type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 1270853711}
     - target: {fileID: 4549701052356434508, guid: 75a4cbffb157efa4f882207171f982e6, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -14666,6 +14736,26 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2574175155881096480, guid: dcf3e69964b86d647af003c9bb3e802c, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2574175155881096482, guid: dcf3e69964b86d647af003c9bb3e802c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: ButtonClicked
+      objectReference: {fileID: 0}
+    - target: {fileID: 5997984899260560147, guid: dcf3e69964b86d647af003c9bb3e802c, type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 1270853711}
+    - target: {fileID: 8186049119105113091, guid: dcf3e69964b86d647af003c9bb3e802c, type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 1270853711}
+    - target: {fileID: 8363985802322689170, guid: dcf3e69964b86d647af003c9bb3e802c, type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 1270853711}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dcf3e69964b86d647af003c9bb3e802c, type: 3}
 --- !u!1001 &7491230267766226721
