@@ -521,7 +521,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e5a1e94ee4b9e144a6755e6dacfd976, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueSystem: {fileID: 2093862673}
+  dialogueSystem: {fileID: 1383204339}
   dialoguePanel: {fileID: 1872741938}
   interactionPrompt: {fileID: 1156686921}
 --- !u!61 &104113147
@@ -929,7 +929,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1117765520}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &135828394
 SpriteRenderer:
@@ -2142,7 +2142,7 @@ GameObject:
   - component: {fileID: 257444210}
   m_Layer: 10
   m_Name: teacher
-  m_TagString: NPC
+  m_TagString: BadNPC
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2200,7 +2200,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e5a1e94ee4b9e144a6755e6dacfd976, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueSystem: {fileID: 1913180539}
+  dialogueSystem: {fileID: 1119961060}
   dialoguePanel: {fileID: 1327663273}
   interactionPrompt: {fileID: 1026646502}
 --- !u!212 &257444212
@@ -2935,7 +2935,7 @@ Transform:
   m_Children:
   - {fileID: 104113145}
   - {fileID: 1156686922}
-  - {fileID: 2093862671}
+  - {fileID: 1383204338}
   m_Father: {fileID: 45600298}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -7082,7 +7082,7 @@ Transform:
   m_Children:
   - {fileID: 257444209}
   - {fileID: 1026646503}
-  - {fileID: 1913180537}
+  - {fileID: 1119961058}
   m_Father: {fileID: 45600298}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -7547,7 +7547,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1117765520}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1049685278
 MonoBehaviour:
@@ -7561,7 +7561,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e5a1e94ee4b9e144a6755e6dacfd976, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueSystem: {fileID: 2078168550}
+  dialogueSystem: {fileID: 1209986029}
   dialoguePanel: {fileID: 1585522992}
   interactionPrompt: {fileID: 135828392}
 --- !u!61 &1049685279
@@ -7832,7 +7832,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1066081911}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 29.07, y: -3.36, z: -9.7342}
+  m_LocalPosition: {x: 59.5, y: -22.38, z: -9.7342}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -8029,6 +8029,11 @@ Transform:
   m_Father: {fileID: 1671587158}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -89.991}
+--- !u!1 &1104048679 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5861808979542838693, guid: 8856d6967ca9b194c974f8f12bbc31bc, type: 3}
+  m_PrefabInstance: {fileID: 1348616707}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1117765519
 GameObject:
   m_ObjectHideFlags: 0
@@ -8057,12 +8062,196 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 2078168552}
   - {fileID: 1049685277}
   - {fileID: 135828393}
+  - {fileID: 1209986027}
   m_Father: {fileID: 45600298}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1119961057
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1119961058}
+  - component: {fileID: 1119961060}
+  - component: {fileID: 1119961059}
+  m_Layer: 0
+  m_Name: NewDialogueSystem
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1119961058
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1119961057}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1009714757}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &1119961059
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1119961057}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!114 &1119961060
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1119961057}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49f0ea3d174a8124e9545ec4fca23119, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueText: {fileID: 0}
+  dialogueTextMeshPro: {fileID: 415099433}
+  continueButton: {fileID: 1053542246}
+  voiceSource: {fileID: 1119961059}
+  dialogueSets:
+  - dialogueLines:
+    - dialogueText: Skip this line
+      voiceClip: {fileID: 0}
+      objectsToHide: []
+      objectsToShow: []
+      hideObjectsOnStart: 0
+      showObjectsOnStart: 0
+    - dialogueText: 'Child: "This guy seems so weird and suspicious"'
+      voiceClip: {fileID: 0}
+      objectsToHide: []
+      objectsToShow: []
+      hideObjectsOnStart: 0
+      showObjectsOnStart: 0
+    - dialogueText: 'Child: "Why is he looking at me like that?...."'
+      voiceClip: {fileID: 0}
+      objectsToHide: []
+      objectsToShow: []
+      hideObjectsOnStart: 0
+      showObjectsOnStart: 0
+    - dialogueText: 'Stranger: Are you lost little girl?'
+      voiceClip: {fileID: 0}
+      objectsToHide: []
+      objectsToShow: []
+      hideObjectsOnStart: 0
+      showObjectsOnStart: 0
+    - dialogueText: 'Stranger: Want me to help you find your parents?'
+      voiceClip: {fileID: 0}
+      objectsToHide: []
+      objectsToShow: []
+      hideObjectsOnStart: 0
+      showObjectsOnStart: 0
+    - dialogueText: 'Child: No thank you. '
+      voiceClip: {fileID: 0}
+      objectsToHide: []
+      objectsToShow: []
+      hideObjectsOnStart: 0
+      showObjectsOnStart: 0
+  dialoguePanel: {fileID: 1327663273}
 --- !u!1 &1136148813
 GameObject:
   m_ObjectHideFlags: 0
@@ -8722,6 +8911,202 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1193645332}
   m_CullTransparentMesh: 1
+--- !u!1 &1209986026
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1209986027}
+  - component: {fileID: 1209986029}
+  - component: {fileID: 1209986028}
+  m_Layer: 0
+  m_Name: NewDialogueSystem
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1209986027
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1209986026}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1117765520}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &1209986028
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1209986026}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!114 &1209986029
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1209986026}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49f0ea3d174a8124e9545ec4fca23119, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueText: {fileID: 0}
+  dialogueTextMeshPro: {fileID: 495418082}
+  continueButton: {fileID: 1900566411}
+  voiceSource: {fileID: 1209986028}
+  dialogueSets:
+  - dialogueLines:
+    - dialogueText: Skip this line
+      voiceClip: {fileID: 8300000, guid: 15579b00bd69bc747a45aee00fa3b8a9, type: 3}
+      objectsToHide: []
+      objectsToShow:
+      - {fileID: 924259708}
+      - {fileID: 1934504055}
+      hideObjectsOnStart: 0
+      showObjectsOnStart: 0
+    - dialogueText: 'Child: "This looks like an officer"'
+      voiceClip: {fileID: 0}
+      objectsToHide: []
+      objectsToShow: []
+      hideObjectsOnStart: 0
+      showObjectsOnStart: 0
+    - dialogueText: 'Child: Excuse me Mr Officer!'
+      voiceClip: {fileID: 0}
+      objectsToHide: []
+      objectsToShow: []
+      hideObjectsOnStart: 0
+      showObjectsOnStart: 0
+    - dialogueText: 'Mr Officer: Oh hey. What''s wrong little kid?'
+      voiceClip: {fileID: 0}
+      objectsToHide: []
+      objectsToShow: []
+      hideObjectsOnStart: 0
+      showObjectsOnStart: 0
+    - dialogueText: 'Child: I lost my parents. Could you help me find them?'
+      voiceClip: {fileID: 0}
+      objectsToHide: []
+      objectsToShow: []
+      hideObjectsOnStart: 0
+      showObjectsOnStart: 0
+    - dialogueText: 'Mr Officer: Oh sure, I know where your parents are. Follow my
+        friends.'
+      voiceClip: {fileID: 0}
+      objectsToHide:
+      - {fileID: 924259708}
+      - {fileID: 1934504055}
+      - {fileID: 462762939}
+      objectsToShow: []
+      hideObjectsOnStart: 0
+      showObjectsOnStart: 0
+    - dialogueText: 'Mr Officer: He will bring you to your parents.'
+      voiceClip: {fileID: 0}
+      objectsToHide: []
+      objectsToShow: []
+      hideObjectsOnStart: 0
+      showObjectsOnStart: 0
+  dialoguePanel: {fileID: 1585522992}
 --- !u!224 &1217964035 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 3450852987079973242, guid: 6f0b5c2450279ef4c8557b080f9c43bd, type: 3}
@@ -8747,7 +9132,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1264643102
 Transform:
   m_ObjectHideFlags: 0
@@ -9039,6 +9424,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6264981974986151167, guid: 0f13cbe01ce68be469cbfc465bc4f99f, type: 3}
   m_PrefabInstance: {fileID: 1027406181}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1312383315 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6491395157511479599, guid: 8856d6967ca9b194c974f8f12bbc31bc, type: 3}
+  m_PrefabInstance: {fileID: 1348616707}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1316478822
 GameObject:
   m_ObjectHideFlags: 0
@@ -9308,6 +9698,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1329661065}
   m_CullTransparentMesh: 1
+--- !u!1 &1334423595 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3289047666949692263, guid: 8856d6967ca9b194c974f8f12bbc31bc, type: 3}
+  m_PrefabInstance: {fileID: 1348616707}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1348616707
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9423,6 +9818,14 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 6.0424805
       objectReference: {fileID: 0}
+    - target: {fileID: 4929196589444720194, guid: 8856d6967ca9b194c974f8f12bbc31bc, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7750042884886787202, guid: 8856d6967ca9b194c974f8f12bbc31bc, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8856d6967ca9b194c974f8f12bbc31bc, type: 3}
 --- !u!224 &1348616708 stripped
@@ -9514,6 +9917,197 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1383204337
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1383204338}
+  - component: {fileID: 1383204340}
+  - component: {fileID: 1383204339}
+  m_Layer: 0
+  m_Name: NewDialogueSystem
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1383204338
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1383204337}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 413104293}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1383204339
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1383204337}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49f0ea3d174a8124e9545ec4fca23119, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueText: {fileID: 0}
+  dialogueTextMeshPro: {fileID: 883128273}
+  continueButton: {fileID: 1136148815}
+  voiceSource: {fileID: 1383204340}
+  dialogueSets:
+  - dialogueLines:
+    - dialogueText: 'Skip this line '
+      voiceClip: {fileID: 8300000, guid: 15579b00bd69bc747a45aee00fa3b8a9, type: 3}
+      objectsToHide: []
+      objectsToShow: []
+      hideObjectsOnStart: 0
+      showObjectsOnStart: 0
+    - dialogueText: 'Stranger: Hmmm?'
+      voiceClip: {fileID: 0}
+      objectsToHide: []
+      objectsToShow: []
+      hideObjectsOnStart: 0
+      showObjectsOnStart: 0
+    - dialogueText: 'Me: """This guy smells so bad....... The smoke...."""'
+      voiceClip: {fileID: 0}
+      objectsToHide: []
+      objectsToShow: []
+      hideObjectsOnStart: 0
+      showObjectsOnStart: 0
+    - dialogueText: 'Me: "Cough "Cough'
+      voiceClip: {fileID: 0}
+      objectsToHide: []
+      objectsToShow: []
+      hideObjectsOnStart: 0
+      showObjectsOnStart: 0
+    - dialogueText: 'Stranger: You know little girls can''t walk alone in the middle
+        of the mall?'
+      voiceClip: {fileID: 0}
+      objectsToHide: []
+      objectsToShow: []
+      hideObjectsOnStart: 0
+      showObjectsOnStart: 0
+    - dialogueText: 'Stranger: Follow me, I will bring you to someplace safe'
+      voiceClip: {fileID: 0}
+      objectsToHide: []
+      objectsToShow: []
+      hideObjectsOnStart: 0
+      showObjectsOnStart: 0
+    - dialogueText: 'Me: No, i''m good.'
+      voiceClip: {fileID: 0}
+      objectsToHide: []
+      objectsToShow: []
+      hideObjectsOnStart: 0
+      showObjectsOnStart: 0
+  dialoguePanel: {fileID: 1872741938}
+--- !u!82 &1383204340
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1383204337}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &1398451315
 GameObject:
   m_ObjectHideFlags: 0
@@ -9727,7 +10321,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1399789686}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 29.07, y: -3.36, z: -9.7342}
+  m_LocalPosition: {x: 59.5, y: -22.38, z: -9.7342}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -10643,9 +11237,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   visualcue: {fileID: 1448447146}
   winpanel: {fileID: 1451597235}
-  stars1: {fileID: 0}
-  stars2: {fileID: 0}
-  stars3: {fileID: 0}
+  stars1: {fileID: 1312383315}
+  stars2: {fileID: 1334423595}
+  stars3: {fileID: 1104048679}
 --- !u!1 &1621418123
 GameObject:
   m_ObjectHideFlags: 0
@@ -12263,190 +12857,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1900566409}
   m_CullTransparentMesh: 1
---- !u!1 &1913180536
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1913180537}
-  - component: {fileID: 1913180539}
-  - component: {fileID: 1913180538}
-  m_Layer: 0
-  m_Name: 'DialogueSystem '
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1913180537
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1913180536}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -6.7700024, y: 14.095469, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1009714757}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!82 &1913180538
-AudioSource:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1913180536}
-  m_Enabled: 1
-  serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
-  m_Volume: 1
-  m_Pitch: 1
-  Loop: 0
-  Mute: 0
-  Spatialize: 0
-  SpatializePostEffects: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  reverbZoneMixCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
---- !u!114 &1913180539
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1913180536}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 49f0ea3d174a8124e9545ec4fca23119, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogueText: {fileID: 0}
-  dialogueTextMeshPro: {fileID: 415099433}
-  continueButton: {fileID: 1053542246}
-  voiceSource: {fileID: 1913180538}
-  dialogueSets:
-  - dialogueLines:
-    - dialogueText: Skip this line
-      voiceClip: {fileID: 8300000, guid: 15579b00bd69bc747a45aee00fa3b8a9, type: 3}
-      objectsToHide: []
-      objectsToShow: []
-      hideObjectsOnStart: 0
-      showObjectsOnStart: 0
-    - dialogueText: 'Child: "This guy seems so weird and suspicious"'
-      voiceClip: {fileID: 0}
-      objectsToHide: []
-      objectsToShow: []
-      hideObjectsOnStart: 0
-      showObjectsOnStart: 0
-    - dialogueText: 'Child: "Why is he looking at me like that?...."'
-      voiceClip: {fileID: 0}
-      objectsToHide: []
-      objectsToShow: []
-      hideObjectsOnStart: 0
-      showObjectsOnStart: 0
-    - dialogueText: 'Stranger: Are you lost little girl?'
-      voiceClip: {fileID: 0}
-      objectsToHide: []
-      objectsToShow: []
-      hideObjectsOnStart: 0
-      showObjectsOnStart: 0
-    - dialogueText: 'Stranger: Want me to help you find your parents?'
-      voiceClip: {fileID: 0}
-      objectsToHide: []
-      objectsToShow: []
-      hideObjectsOnStart: 0
-      showObjectsOnStart: 0
-    - dialogueText: 'Child: No thank you. '
-      voiceClip: {fileID: 0}
-      objectsToHide: []
-      objectsToShow: []
-      hideObjectsOnStart: 0
-      showObjectsOnStart: 0
-  dialoguePanel: {fileID: 1327663273}
 --- !u!1 &1919144462
 GameObject:
   m_ObjectHideFlags: 0
@@ -13476,202 +13886,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   visualcue: {fileID: 690117435}
   inkJSON: {fileID: 4900000, guid: 08961c4e4a2fb9543b81d423fc57696a, type: 3}
---- !u!1 &2078168549
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2078168552}
-  - component: {fileID: 2078168550}
-  - component: {fileID: 2078168551}
-  m_Layer: 0
-  m_Name: DialogueSystem
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &2078168550
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2078168549}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 49f0ea3d174a8124e9545ec4fca23119, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogueText: {fileID: 0}
-  dialogueTextMeshPro: {fileID: 495418082}
-  continueButton: {fileID: 1900566411}
-  voiceSource: {fileID: 2078168551}
-  dialogueSets:
-  - dialogueLines:
-    - dialogueText: Skip this line
-      voiceClip: {fileID: 8300000, guid: 15579b00bd69bc747a45aee00fa3b8a9, type: 3}
-      objectsToHide: []
-      objectsToShow:
-      - {fileID: 924259708}
-      - {fileID: 1934504055}
-      hideObjectsOnStart: 0
-      showObjectsOnStart: 0
-    - dialogueText: 'Child: "This looks like an officer"'
-      voiceClip: {fileID: 0}
-      objectsToHide: []
-      objectsToShow: []
-      hideObjectsOnStart: 0
-      showObjectsOnStart: 0
-    - dialogueText: 'Child: Excuse me Mr Officer!'
-      voiceClip: {fileID: 0}
-      objectsToHide: []
-      objectsToShow: []
-      hideObjectsOnStart: 0
-      showObjectsOnStart: 0
-    - dialogueText: 'Mr Officer: Oh hey. What''s wrong little kid?'
-      voiceClip: {fileID: 0}
-      objectsToHide: []
-      objectsToShow: []
-      hideObjectsOnStart: 0
-      showObjectsOnStart: 0
-    - dialogueText: 'Child: I lost my parents. Could you help me find them?'
-      voiceClip: {fileID: 0}
-      objectsToHide: []
-      objectsToShow: []
-      hideObjectsOnStart: 0
-      showObjectsOnStart: 0
-    - dialogueText: 'Mr Officer: Oh sure, I know where your parents are. Follow my
-        friends.'
-      voiceClip: {fileID: 0}
-      objectsToHide:
-      - {fileID: 924259708}
-      - {fileID: 1934504055}
-      - {fileID: 462762939}
-      objectsToShow: []
-      hideObjectsOnStart: 0
-      showObjectsOnStart: 0
-    - dialogueText: 'Mr Officer: He will bring you to your parents.'
-      voiceClip: {fileID: 0}
-      objectsToHide: []
-      objectsToShow: []
-      hideObjectsOnStart: 0
-      showObjectsOnStart: 0
-  dialoguePanel: {fileID: 1585522992}
---- !u!82 &2078168551
-AudioSource:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2078168549}
-  m_Enabled: 1
-  serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
-  m_Volume: 1
-  m_Pitch: 1
-  Loop: 0
-  Mute: 0
-  Spatialize: 0
-  SpatializePostEffects: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  reverbZoneMixCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
---- !u!4 &2078168552
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2078168549}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -24.180002, y: 27.919998, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1117765520}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &2080741722 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6601305218700091231, guid: e019417e32fecdc4795c88dfb45f528a, type: 3}
@@ -14010,197 +14224,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &2093862670
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2093862671}
-  - component: {fileID: 2093862673}
-  - component: {fileID: 2093862672}
-  m_Layer: 0
-  m_Name: 'DialogueSystem '
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &2093862671
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2093862670}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -75.590004, y: 13.149998, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 413104293}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!82 &2093862672
-AudioSource:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2093862670}
-  m_Enabled: 1
-  serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
-  m_Volume: 1
-  m_Pitch: 1
-  Loop: 0
-  Mute: 0
-  Spatialize: 0
-  SpatializePostEffects: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  reverbZoneMixCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
---- !u!114 &2093862673
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2093862670}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 49f0ea3d174a8124e9545ec4fca23119, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogueText: {fileID: 0}
-  dialogueTextMeshPro: {fileID: 883128273}
-  continueButton: {fileID: 1136148815}
-  voiceSource: {fileID: 2093862672}
-  dialogueSets:
-  - dialogueLines:
-    - dialogueText: 'Skip this line '
-      voiceClip: {fileID: 8300000, guid: 15579b00bd69bc747a45aee00fa3b8a9, type: 3}
-      objectsToHide: []
-      objectsToShow: []
-      hideObjectsOnStart: 0
-      showObjectsOnStart: 0
-    - dialogueText: 'Stranger: Hmmm?'
-      voiceClip: {fileID: 0}
-      objectsToHide: []
-      objectsToShow: []
-      hideObjectsOnStart: 0
-      showObjectsOnStart: 0
-    - dialogueText: 'Me: """This guy smells so bad....... The smoke...."""'
-      voiceClip: {fileID: 0}
-      objectsToHide: []
-      objectsToShow: []
-      hideObjectsOnStart: 0
-      showObjectsOnStart: 0
-    - dialogueText: 'Me: "Cough "Cough'
-      voiceClip: {fileID: 0}
-      objectsToHide: []
-      objectsToShow: []
-      hideObjectsOnStart: 0
-      showObjectsOnStart: 0
-    - dialogueText: 'Stranger: You know little girls can''t walk alone in the middle
-        of the mall?'
-      voiceClip: {fileID: 0}
-      objectsToHide: []
-      objectsToShow: []
-      hideObjectsOnStart: 0
-      showObjectsOnStart: 0
-    - dialogueText: 'Stranger: Follow me, I will bring you to someplace safe'
-      voiceClip: {fileID: 0}
-      objectsToHide: []
-      objectsToShow: []
-      hideObjectsOnStart: 0
-      showObjectsOnStart: 0
-    - dialogueText: 'Me: No, i''m good.'
-      voiceClip: {fileID: 0}
-      objectsToHide: []
-      objectsToShow: []
-      hideObjectsOnStart: 0
-      showObjectsOnStart: 0
-  dialoguePanel: {fileID: 1872741938}
 --- !u!1 &2102656431
 GameObject:
   m_ObjectHideFlags: 0
@@ -14517,11 +14540,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7491230268511173837, guid: ef4af57cd4cb30d48970f1b65dfd1d54, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 29.07
+      value: 59.5
       objectReference: {fileID: 0}
     - target: {fileID: 7491230268511173837, guid: ef4af57cd4cb30d48970f1b65dfd1d54, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.36
+      value: -22.38
       objectReference: {fileID: 0}
     - target: {fileID: 7491230268511173837, guid: ef4af57cd4cb30d48970f1b65dfd1d54, type: 3}
       propertyPath: m_LocalPosition.z

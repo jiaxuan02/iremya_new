@@ -3450,9 +3450,9 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 2030090844}
   - {fileID: 364926294}
   - {fileID: 1439798243}
+  - {fileID: 2102248568}
   m_Father: {fileID: 0}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4356,7 +4356,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 309221202}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &366688009
 GameObject:
@@ -8616,7 +8616,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1066081911}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.1, y: 1.1, z: -10}
+  m_LocalPosition: {x: 16.4, y: 59.9, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -11382,7 +11382,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1399789686}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.1, y: 1.1, z: -10}
+  m_LocalPosition: {x: 16.4, y: 59.9, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -12198,7 +12198,7 @@ Transform:
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 309221202}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1439798244
 MonoBehaviour:
@@ -12212,7 +12212,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e5a1e94ee4b9e144a6755e6dacfd976, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueSystem: {fileID: 2030090846}
+  dialogueSystem: {fileID: 2102248569}
   dialoguePanel: {fileID: 899673894}
   interactionPrompt: {fileID: 364926292}
 --- !u!61 &1439798245
@@ -16112,212 +16112,6 @@ RectTransform:
   m_AnchoredPosition: {x: 222.667, y: -153.20398}
   m_SizeDelta: {x: 131.533, y: 131.533}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!1 &2030090843
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2030090844}
-  - component: {fileID: 2030090846}
-  - component: {fileID: 2030090845}
-  m_Layer: 0
-  m_Name: 'DialogueSystem '
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &2030090844
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2030090843}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.9199998, y: -21.29, z: 2.5936189}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 309221202}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!82 &2030090845
-AudioSource:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2030090843}
-  m_Enabled: 1
-  serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
-  m_Volume: 1
-  m_Pitch: 1
-  Loop: 0
-  Mute: 0
-  Spatialize: 0
-  SpatializePostEffects: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  reverbZoneMixCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
---- !u!114 &2030090846
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2030090843}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 49f0ea3d174a8124e9545ec4fca23119, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogueText: {fileID: 0}
-  dialogueTextMeshPro: {fileID: 1961060486}
-  continueButton: {fileID: 1433543707}
-  voiceSource: {fileID: 2030090845}
-  dialogueSets:
-  - dialogueLines:
-    - dialogueText: Skip this line
-      voiceClip: {fileID: 0}
-      objectsToHide: []
-      objectsToShow:
-      - {fileID: 180871883}
-      - {fileID: 1739220232}
-      hideObjectsOnStart: 0
-      showObjectsOnStart: 0
-    - dialogueText: 'Friend: Oh hi!! Let''s go and...'
-      voiceClip: {fileID: 0}
-      objectsToHide:
-      - {fileID: 0}
-      - {fileID: 0}
-      - {fileID: 0}
-      - {fileID: 0}
-      objectsToShow: []
-      hideObjectsOnStart: 0
-      showObjectsOnStart: 0
-    - dialogueText: 'Me: Don''t play here it''s dangerous!'
-      voiceClip: {fileID: 0}
-      objectsToHide: []
-      objectsToShow: []
-      hideObjectsOnStart: 0
-      showObjectsOnStart: 0
-    - dialogueText: 'Friend: Why?'
-      voiceClip: {fileID: 0}
-      objectsToHide: []
-      objectsToShow: []
-      hideObjectsOnStart: 0
-      showObjectsOnStart: 0
-    - dialogueText: 'Me: The railing is broken. You''re going to fall!'
-      voiceClip: {fileID: 0}
-      objectsToHide: []
-      objectsToShow: []
-      hideObjectsOnStart: 0
-      showObjectsOnStart: 0
-    - dialogueText: 'Friend: Oh no! It''s a good thing you came here. Thank you for
-        telling me.'
-      voiceClip: {fileID: 0}
-      objectsToHide: []
-      objectsToShow: []
-      hideObjectsOnStart: 0
-      showObjectsOnStart: 0
-    - dialogueText: 'Me: Follow me. We will go back to our class together'
-      voiceClip: {fileID: 0}
-      objectsToHide:
-      - {fileID: 180871883}
-      - {fileID: 1363316610}
-      - {fileID: 1739220232}
-      objectsToShow: []
-      hideObjectsOnStart: 0
-      showObjectsOnStart: 0
-    - dialogueText: '"""Go Open the door on the left side"""'
-      voiceClip: {fileID: 0}
-      objectsToHide: []
-      objectsToShow: []
-      hideObjectsOnStart: 1
-      showObjectsOnStart: 1
-  dialoguePanel: {fileID: 899673894}
 --- !u!1 &2040469031 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1887643655792646341, guid: 8856d6967ca9b194c974f8f12bbc31bc, type: 3}
@@ -16682,6 +16476,212 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2096787654}
   m_CullTransparentMesh: 1
+--- !u!1 &2102248567
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2102248568}
+  - component: {fileID: 2102248570}
+  - component: {fileID: 2102248569}
+  m_Layer: 0
+  m_Name: NewDialogueSystem
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2102248568
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2102248567}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 309221202}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2102248569
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2102248567}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49f0ea3d174a8124e9545ec4fca23119, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueText: {fileID: 0}
+  dialogueTextMeshPro: {fileID: 1961060486}
+  continueButton: {fileID: 1433543707}
+  voiceSource: {fileID: 2102248570}
+  dialogueSets:
+  - dialogueLines:
+    - dialogueText: Skip this line
+      voiceClip: {fileID: 0}
+      objectsToHide: []
+      objectsToShow:
+      - {fileID: 180871883}
+      - {fileID: 1739220232}
+      hideObjectsOnStart: 0
+      showObjectsOnStart: 0
+    - dialogueText: 'Friend: Oh hi!! Let''s go and...'
+      voiceClip: {fileID: 0}
+      objectsToHide:
+      - {fileID: 0}
+      - {fileID: 0}
+      - {fileID: 0}
+      - {fileID: 0}
+      objectsToShow: []
+      hideObjectsOnStart: 0
+      showObjectsOnStart: 0
+    - dialogueText: 'Me: Don''t play here it''s dangerous!'
+      voiceClip: {fileID: 0}
+      objectsToHide: []
+      objectsToShow: []
+      hideObjectsOnStart: 0
+      showObjectsOnStart: 0
+    - dialogueText: 'Friend: Why?'
+      voiceClip: {fileID: 0}
+      objectsToHide: []
+      objectsToShow: []
+      hideObjectsOnStart: 0
+      showObjectsOnStart: 0
+    - dialogueText: 'Me: The railing is broken. You''re going to fall!'
+      voiceClip: {fileID: 0}
+      objectsToHide: []
+      objectsToShow: []
+      hideObjectsOnStart: 0
+      showObjectsOnStart: 0
+    - dialogueText: 'Friend: Oh no! It''s a good thing you came here. Thank you for
+        telling me.'
+      voiceClip: {fileID: 0}
+      objectsToHide: []
+      objectsToShow: []
+      hideObjectsOnStart: 0
+      showObjectsOnStart: 0
+    - dialogueText: 'Me: Follow me. We will go back to our class together'
+      voiceClip: {fileID: 0}
+      objectsToHide:
+      - {fileID: 180871883}
+      - {fileID: 1363316610}
+      - {fileID: 1739220232}
+      objectsToShow: []
+      hideObjectsOnStart: 0
+      showObjectsOnStart: 0
+    - dialogueText: '"""Go Open the door on the left side"""'
+      voiceClip: {fileID: 0}
+      objectsToHide: []
+      objectsToShow: []
+      hideObjectsOnStart: 1
+      showObjectsOnStart: 1
+  dialoguePanel: {fileID: 899673894}
+--- !u!82 &2102248570
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2102248567}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &2104965075
 GameObject:
   m_ObjectHideFlags: 0
@@ -16986,11 +16986,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7491230268511173837, guid: ef4af57cd4cb30d48970f1b65dfd1d54, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -5.1
+      value: 16.4
       objectReference: {fileID: 0}
     - target: {fileID: 7491230268511173837, guid: ef4af57cd4cb30d48970f1b65dfd1d54, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.1
+      value: 59.9
       objectReference: {fileID: 0}
     - target: {fileID: 7491230268511173837, guid: ef4af57cd4cb30d48970f1b65dfd1d54, type: 3}
       propertyPath: m_LocalPosition.z

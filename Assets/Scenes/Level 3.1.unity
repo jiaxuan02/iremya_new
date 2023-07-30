@@ -2248,17 +2248,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ec9b4ed5367b1142bef278bbcab6714, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &335010251 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3871185557986623772, guid: 8546531411dbc0b49a84367040300ab7, type: 3}
-  m_PrefabInstance: {fileID: 429451685}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &350613899
 GameObject:
   m_ObjectHideFlags: 0
@@ -7302,7 +7291,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueText: {fileID: 0}
   dialogueTextMeshPro: {fileID: 1710373240}
-  continueButton: {fileID: 335010251}
+  continueButton: {fileID: 1434013357}
   voiceSource: {fileID: 1291731918}
   dialogueSets:
   - dialogueLines:
