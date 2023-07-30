@@ -76,7 +76,6 @@ public class Lvl3_QuizManager : MonoBehaviour
         q1.answerOptions = new string[] { "No", "Yes" };
         q1.correctAnswerIndex = 1;
         // Assign the voice line for Question 1
-        q1.voiceLine = Resources.Load<AudioClip>("Liangfenzhong");
         questions.Add(q1);
 
         // Question 2
