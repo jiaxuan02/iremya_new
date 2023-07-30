@@ -11013,6 +11013,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1868833729}
     m_Modifications:
+    - target: {fileID: 2050023531690459185, guid: 75a4cbffb157efa4f882207171f982e6, type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 1270853711}
     - target: {fileID: 4549701052356434508, guid: 75a4cbffb157efa4f882207171f982e6, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -14736,6 +14740,18 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2574175155881096482, guid: dcf3e69964b86d647af003c9bb3e802c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: ButtonClicked
+      objectReference: {fileID: 0}
+    - target: {fileID: 5997984899260560147, guid: dcf3e69964b86d647af003c9bb3e802c, type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 1270853711}
+    - target: {fileID: 8186049119105113091, guid: dcf3e69964b86d647af003c9bb3e802c, type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 1270853711}
     - target: {fileID: 8363985802322689170, guid: dcf3e69964b86d647af003c9bb3e802c, type: 3}
       propertyPath: audioSource
       value: 
