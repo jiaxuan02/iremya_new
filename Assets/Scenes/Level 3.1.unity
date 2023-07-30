@@ -7296,13 +7296,13 @@ MonoBehaviour:
   dialogueSets:
   - dialogueLines:
     - dialogueText: Hi!
-      voiceClip: {fileID: 8300000, guid: 15579b00bd69bc747a45aee00fa3b8a9, type: 3}
+      voiceClip: {fileID: 8300000, guid: 2c19aa21eb528064db43a36b0b5bc535, type: 3}
       objectsToHide: []
       objectsToShow: []
       hideObjectsOnStart: 0
       showObjectsOnStart: 0
     - dialogueText: Hi!
-      voiceClip: {fileID: 8300000, guid: 15579b00bd69bc747a45aee00fa3b8a9, type: 3}
+      voiceClip: {fileID: 8300000, guid: 2c19aa21eb528064db43a36b0b5bc535, type: 3}
       objectsToHide: []
       objectsToShow: []
       hideObjectsOnStart: 0

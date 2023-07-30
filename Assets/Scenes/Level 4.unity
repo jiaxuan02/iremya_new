@@ -6654,7 +6654,7 @@ MonoBehaviour:
   dialogueSets:
   - dialogueLines:
     - dialogueText: Skip this line
-      voiceClip: {fileID: 8300000, guid: 15579b00bd69bc747a45aee00fa3b8a9, type: 3}
+      voiceClip: {fileID: 8300000, guid: 8f08a5ad5f3d0c142bbe27697c5af9e6, type: 3}
       objectsToHide: []
       objectsToShow:
       - {fileID: 230305589}
@@ -6662,13 +6662,13 @@ MonoBehaviour:
       hideObjectsOnStart: 0
       showObjectsOnStart: 0
     - dialogueText: 'Staff: Are you lost sweetie?'
-      voiceClip: {fileID: 0}
+      voiceClip: {fileID: 8300000, guid: 05903c1728c695c45a3d5eb1e5c2aaf3, type: 3}
       objectsToHide: []
       objectsToShow: []
       hideObjectsOnStart: 0
       showObjectsOnStart: 0
     - dialogueText: 'Child: Yes, do you know how to go to the counter services?'
-      voiceClip: {fileID: 0}
+      voiceClip: {fileID: 8300000, guid: 8552dc9ce98e6fb4f8771cbdeb7aba9f, type: 3}
       objectsToHide:
       - {fileID: 205260645}
       - {fileID: 230305589}
@@ -7832,7 +7832,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1066081911}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 59.5, y: -22.38, z: -9.7342}
+  m_LocalPosition: {x: 28.2, y: -1.6, z: -9.7342}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -8216,31 +8216,31 @@ MonoBehaviour:
   dialogueSets:
   - dialogueLines:
     - dialogueText: Skip this line
-      voiceClip: {fileID: 0}
+      voiceClip: {fileID: 8300000, guid: fc4debdaaa0328e4ba5bba50fafa21aa, type: 3}
       objectsToHide: []
       objectsToShow: []
       hideObjectsOnStart: 0
       showObjectsOnStart: 0
     - dialogueText: 'Child: "This guy seems so weird and suspicious"'
-      voiceClip: {fileID: 0}
+      voiceClip: {fileID: 8300000, guid: a81bad2277f85a14ba1f4153bc5b56f2, type: 3}
       objectsToHide: []
       objectsToShow: []
       hideObjectsOnStart: 0
       showObjectsOnStart: 0
     - dialogueText: 'Child: "Why is he looking at me like that?...."'
-      voiceClip: {fileID: 0}
+      voiceClip: {fileID: 8300000, guid: d6dcac1882d5200438d0cfac6d7912a5, type: 3}
       objectsToHide: []
       objectsToShow: []
       hideObjectsOnStart: 0
       showObjectsOnStart: 0
     - dialogueText: 'Stranger: Are you lost little girl?'
-      voiceClip: {fileID: 0}
+      voiceClip: {fileID: 8300000, guid: 87f662d40db44b744b3d732102bb2aa0, type: 3}
       objectsToHide: []
       objectsToShow: []
       hideObjectsOnStart: 0
       showObjectsOnStart: 0
     - dialogueText: 'Stranger: Want me to help you find your parents?'
-      voiceClip: {fileID: 0}
+      voiceClip: {fileID: 8300000, guid: 78ff2cfad0b94034d892e8dc36e04ceb, type: 3}
       objectsToHide: []
       objectsToShow: []
       hideObjectsOnStart: 0
@@ -9059,7 +9059,7 @@ MonoBehaviour:
   dialogueSets:
   - dialogueLines:
     - dialogueText: Skip this line
-      voiceClip: {fileID: 8300000, guid: 15579b00bd69bc747a45aee00fa3b8a9, type: 3}
+      voiceClip: {fileID: 8300000, guid: d96a4e849146a924086d921cf668973f, type: 3}
       objectsToHide: []
       objectsToShow:
       - {fileID: 924259708}
@@ -9067,32 +9067,31 @@ MonoBehaviour:
       hideObjectsOnStart: 0
       showObjectsOnStart: 0
     - dialogueText: 'Child: "This looks like an officer"'
-      voiceClip: {fileID: 0}
+      voiceClip: {fileID: 8300000, guid: 60d2d72bbb1a6cc41861a1b7e1ab0436, type: 3}
       objectsToHide: []
       objectsToShow: []
       hideObjectsOnStart: 0
       showObjectsOnStart: 0
     - dialogueText: 'Child: Excuse me Mr Officer!'
-      voiceClip: {fileID: 0}
+      voiceClip: {fileID: 8300000, guid: df36315bf4242814aaff28a5c640e1b1, type: 3}
       objectsToHide: []
       objectsToShow: []
       hideObjectsOnStart: 0
       showObjectsOnStart: 0
     - dialogueText: 'Mr Officer: Oh hey. What''s wrong little kid?'
-      voiceClip: {fileID: 0}
+      voiceClip: {fileID: 8300000, guid: ddff4a6192f579049bd7ce870cbdc385, type: 3}
       objectsToHide: []
       objectsToShow: []
       hideObjectsOnStart: 0
       showObjectsOnStart: 0
-    - dialogueText: 'Child: I lost my parents. Could you help me find them?'
-      voiceClip: {fileID: 0}
+    - dialogueText: 'Child: I lost my parents. Could you help me find my parents?'
+      voiceClip: {fileID: 8300000, guid: 50bf7c76a035fdf468dcfcd996902a60, type: 3}
       objectsToHide: []
       objectsToShow: []
       hideObjectsOnStart: 0
       showObjectsOnStart: 0
-    - dialogueText: 'Mr Officer: Oh sure, I know where your parents are. Follow my
-        friends.'
-      voiceClip: {fileID: 0}
+    - dialogueText: 'Mr Officer: Oh sure, come follow my friend.'
+      voiceClip: {fileID: 8300000, guid: 1b96abab3a30b234397bf7125b4bc233, type: 3}
       objectsToHide:
       - {fileID: 924259708}
       - {fileID: 1934504055}
@@ -9100,7 +9099,7 @@ MonoBehaviour:
       objectsToShow: []
       hideObjectsOnStart: 0
       showObjectsOnStart: 0
-    - dialogueText: 'Mr Officer: He will bring you to your parents.'
+    - dialogueText: 'Mr Officer: He will help you find your parents.'
       voiceClip: {fileID: 0}
       objectsToHide: []
       objectsToShow: []
@@ -9132,7 +9131,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1264643102
 Transform:
   m_ObjectHideFlags: 0
@@ -9969,38 +9968,38 @@ MonoBehaviour:
   dialogueSets:
   - dialogueLines:
     - dialogueText: 'Skip this line '
-      voiceClip: {fileID: 8300000, guid: 15579b00bd69bc747a45aee00fa3b8a9, type: 3}
+      voiceClip: {fileID: 8300000, guid: bf0caefe691338d459a51ec62400771a, type: 3}
       objectsToHide: []
       objectsToShow: []
       hideObjectsOnStart: 0
       showObjectsOnStart: 0
     - dialogueText: 'Stranger: Hmmm?'
-      voiceClip: {fileID: 0}
+      voiceClip: {fileID: 8300000, guid: c9129a74718eb1f4da45d07a07d07878, type: 3}
       objectsToHide: []
       objectsToShow: []
       hideObjectsOnStart: 0
       showObjectsOnStart: 0
     - dialogueText: 'Me: """This guy smells so bad....... The smoke...."""'
-      voiceClip: {fileID: 0}
+      voiceClip: {fileID: 8300000, guid: 4b790735f704eb845930f4d16e89d8e3, type: 3}
       objectsToHide: []
       objectsToShow: []
       hideObjectsOnStart: 0
       showObjectsOnStart: 0
     - dialogueText: 'Me: "Cough "Cough'
-      voiceClip: {fileID: 0}
+      voiceClip: {fileID: 8300000, guid: 36bc6464e4a11f8498252b22de3d041a, type: 3}
       objectsToHide: []
       objectsToShow: []
       hideObjectsOnStart: 0
       showObjectsOnStart: 0
     - dialogueText: 'Stranger: You know little girls can''t walk alone in the middle
         of the mall?'
-      voiceClip: {fileID: 0}
+      voiceClip: {fileID: 8300000, guid: 4c77b2ba2624e024d8ae88f08bac403a, type: 3}
       objectsToHide: []
       objectsToShow: []
       hideObjectsOnStart: 0
       showObjectsOnStart: 0
     - dialogueText: 'Stranger: Follow me, I will bring you to someplace safe'
-      voiceClip: {fileID: 0}
+      voiceClip: {fileID: 8300000, guid: ca941fb066c0b0544aa22899019eaafb, type: 3}
       objectsToHide: []
       objectsToShow: []
       hideObjectsOnStart: 0
@@ -10321,7 +10320,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1399789686}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 59.5, y: -22.38, z: -9.7342}
+  m_LocalPosition: {x: 28.2, y: -1.6, z: -9.7342}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -14540,11 +14539,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7491230268511173837, guid: ef4af57cd4cb30d48970f1b65dfd1d54, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 59.5
+      value: 28.2
       objectReference: {fileID: 0}
     - target: {fileID: 7491230268511173837, guid: ef4af57cd4cb30d48970f1b65dfd1d54, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -22.38
+      value: -1.6
       objectReference: {fileID: 0}
     - target: {fileID: 7491230268511173837, guid: ef4af57cd4cb30d48970f1b65dfd1d54, type: 3}
       propertyPath: m_LocalPosition.z

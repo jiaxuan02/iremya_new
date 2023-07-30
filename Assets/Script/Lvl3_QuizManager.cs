@@ -84,7 +84,7 @@ public class Lvl3_QuizManager : MonoBehaviour
         q2.answerOptions = new string[] { "No", "Yes" };
         q2.correctAnswerIndex = 0;
         // Assign the voice line for Question 2
-        q2.voiceLine = Resources.Load<AudioClip>("Liangfenzhong");
+        q2.voiceLine = Resources.Load<AudioClip>("Doyouwanttoeatcandy");
         questions.Add(q2);
 
         // Question 3
@@ -93,16 +93,16 @@ public class Lvl3_QuizManager : MonoBehaviour
         q3.answerOptions = new string[] { "No", "Yes" };
         q3.correctAnswerIndex = 0;
         // Assign the voice line for Question 3
-        q3.voiceLine = Resources.Load<AudioClip>("Liangfenzhong");
+        q3.voiceLine = Resources.Load<AudioClip>("Doyouwantmetosendyouhome");
         questions.Add(q3);
 
         // Question 4
         Question q4 = new Question();
-        q4.questionText = "Do you want to play my iPad? I left it in my car. We can go get it together.";
+        q4.questionText = "Do you want to play together on my iPad? I left it in my car. We can go get it together.";
         q4.answerOptions = new string[] { "No", "Yes" };
         q4.correctAnswerIndex = 0;
         // Assign the voice line for Question 4
-        q4.voiceLine = Resources.Load<AudioClip>("Liangfenzhong");
+        q4.voiceLine = Resources.Load<AudioClip>("Doyouwanttoplayipad");
         questions.Add(q4);
     }
 

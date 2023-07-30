@@ -1113,18 +1113,30 @@ MonoBehaviour:
   dialogueSets:
   - dialogueLines:
     - dialogueText: 
-      voiceClip: {fileID: 0}
+      voiceClip: {fileID: 8300000, guid: 4841d7026846a8c4a9e70cc51a3d5b8e, type: 3}
       objectsToHide: []
       objectsToShow: []
       hideObjectsOnStart: 0
       showObjectsOnStart: 0
-    - dialogueText: What are you doing here!
-      voiceClip: {fileID: 0}
+    - dialogueText: What are you doing here?
+      voiceClip: {fileID: 8300000, guid: 6207536fdf2e5c34e923182bd04be81c, type: 3}
       objectsToHide: []
       objectsToShow: []
       hideObjectsOnStart: 0
       showObjectsOnStart: 0
-    - dialogueText: Get back to your classroom!
+    - dialogueText: The rooftop is a restricted area!
+      voiceClip: {fileID: 8300000, guid: beb7bd8a9860daf4b861152808a648ec, type: 3}
+      objectsToHide: []
+      objectsToShow: []
+      hideObjectsOnStart: 0
+      showObjectsOnStart: 0
+    - dialogueText: You can't go to the rooftop!
+      voiceClip: {fileID: 8300000, guid: 560438e6e3687ac4bb0c67e7c3e0faec, type: 3}
+      objectsToHide: []
+      objectsToShow: []
+      hideObjectsOnStart: 0
+      showObjectsOnStart: 0
+    - dialogueText: Go back to your classes!
       voiceClip: {fileID: 0}
       objectsToHide: []
       objectsToShow: []
@@ -8616,7 +8628,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1066081911}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 16.4, y: 59.9, z: -10}
+  m_LocalPosition: {x: -4.7, y: 0.6, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -11382,7 +11394,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1399789686}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 16.4, y: 59.9, z: -10}
+  m_LocalPosition: {x: -4.7, y: 0.6, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -16528,7 +16540,7 @@ MonoBehaviour:
   dialogueSets:
   - dialogueLines:
     - dialogueText: Skip this line
-      voiceClip: {fileID: 0}
+      voiceClip: {fileID: 8300000, guid: 99182d2575150a44faec702bf341d088, type: 3}
       objectsToHide: []
       objectsToShow:
       - {fileID: 180871883}
@@ -16536,7 +16548,7 @@ MonoBehaviour:
       hideObjectsOnStart: 0
       showObjectsOnStart: 0
     - dialogueText: 'Friend: Oh hi!! Let''s go and...'
-      voiceClip: {fileID: 0}
+      voiceClip: {fileID: 8300000, guid: 7e5ec55e30edcd347b72fcbc4dc2812f, type: 3}
       objectsToHide:
       - {fileID: 0}
       - {fileID: 0}
@@ -16546,31 +16558,31 @@ MonoBehaviour:
       hideObjectsOnStart: 0
       showObjectsOnStart: 0
     - dialogueText: 'Me: Don''t play here it''s dangerous!'
-      voiceClip: {fileID: 0}
+      voiceClip: {fileID: 8300000, guid: d11e456ca53c3b64899707bd1558c39d, type: 3}
       objectsToHide: []
       objectsToShow: []
       hideObjectsOnStart: 0
       showObjectsOnStart: 0
     - dialogueText: 'Friend: Why?'
-      voiceClip: {fileID: 0}
+      voiceClip: {fileID: 8300000, guid: 292414a141cc6ae459285e25b2b9e58f, type: 3}
       objectsToHide: []
       objectsToShow: []
       hideObjectsOnStart: 0
       showObjectsOnStart: 0
     - dialogueText: 'Me: The railing is broken. You''re going to fall!'
-      voiceClip: {fileID: 0}
+      voiceClip: {fileID: 8300000, guid: 9a02163d1cd81ab4f8e11bba20fba491, type: 3}
       objectsToHide: []
       objectsToShow: []
       hideObjectsOnStart: 0
       showObjectsOnStart: 0
     - dialogueText: 'Friend: Oh no! It''s a good thing you came here. Thank you for
         telling me.'
-      voiceClip: {fileID: 0}
+      voiceClip: {fileID: 8300000, guid: 290010118628ec3439e995c458c80ed2, type: 3}
       objectsToHide: []
       objectsToShow: []
       hideObjectsOnStart: 0
       showObjectsOnStart: 0
-    - dialogueText: 'Me: Follow me. We will go back to our class together'
+    - dialogueText: 'Me: Follow me. Let''s go back to our class together'
       voiceClip: {fileID: 0}
       objectsToHide:
       - {fileID: 180871883}
@@ -16986,11 +16998,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7491230268511173837, guid: ef4af57cd4cb30d48970f1b65dfd1d54, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 16.4
+      value: -4.7
       objectReference: {fileID: 0}
     - target: {fileID: 7491230268511173837, guid: ef4af57cd4cb30d48970f1b65dfd1d54, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 59.9
+      value: 0.6
       objectReference: {fileID: 0}
     - target: {fileID: 7491230268511173837, guid: ef4af57cd4cb30d48970f1b65dfd1d54, type: 3}
       propertyPath: m_LocalPosition.z
