@@ -30,7 +30,7 @@ public class Lvl4_WinTrigger1 : MonoBehaviour
         if (playerInRange && !DialogueManager.GetInstance().dialogueIsPlaying){
             visualcue.SetActive(true);
 
-            if (Lvl4_Score.scores == 3)
+            if (Lvl4_Score.scores >= 3)
             {
                 stars1.SetActive(true);
             }
